@@ -22,10 +22,14 @@
   "homepage": "https://github.com/weareonelaw/letterfromhumanity#readme",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "firebase": "^5.8.1",
     "next": "^7.0.2",
     "node-sass": "^4.11.0",
     "normalize-scss": "^7.0.1",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-form": "^8.1.0"
   }
 }
