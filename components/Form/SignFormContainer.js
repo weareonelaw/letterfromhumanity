@@ -1,17 +1,23 @@
 import React from 'react';
 import Form from './Form'
 import { reduxForm } from 'redux-form';
+import Thanks from './Thanks';
 
-export const SignFormContainer = ({ handleSubmit }) => {
+export const SignFormContainer = ({ handleSubmit, submitSucceeded }) => {
   const submitForm = (formValues) => {
     console.log('submitting Form: ', formValues);
   }
 
-  return (
-    <Form
-      onSubmit={submitForm}
-      handleSubmit={handleSubmit}
-    />
+  if(submitSucceeded) return (
+    <Thanks />
+  )
+  else
+    return (
+      <Form
+        onSubmit={submitForm}
+        handleSubmit={handleSubmit}
+        submitSucceeded={submitSucceeded}
+      />
   );
 }
 
