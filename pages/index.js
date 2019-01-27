@@ -1,3 +1,13 @@
-import "../sass/application.scss";
+import '../sass/application.scss';
+import React from 'react';
+import { Provider } from 'react-redux';
+import SignFormContainer from '../components/Form/SignFormContainer';
+import configureStore from '../store';
 
-export default () => <div>Welcome to next.js!</div>
+const store = configureStore();
+
+export default () => (
+  <Provider store={store}>
+    <SignFormContainer />
+  </Provider>
+);
