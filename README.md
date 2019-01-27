@@ -8,5 +8,5 @@ A letter from humanity
 # How to run
 `yarn run dev`
 
-# How to export a folder from deployment
+# How to export a folder for deployment
 `yarn run export`
