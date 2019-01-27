@@ -10,5 +10,5 @@ A letter from humanity
 # How to run
 `yarn run dev`
 
-# How to export a folder for deployment
+# How to build and auto-deploy to gh-pages
 `yarn run build`
