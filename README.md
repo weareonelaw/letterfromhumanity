@@ -1,4 +1,6 @@
 # letterfromhumanity
+https://weareonelaw.github.io/letterfromhumanity/
+
 A letter from humanity
 
 # Deps
@@ -9,4 +11,4 @@ A letter from humanity
 `yarn run dev`
 
 # How to export a folder for deployment
-`yarn run export`
+`yarn run build`
