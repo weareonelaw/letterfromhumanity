@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
-    "build":"next build && next export && touch out/.nojekyll && touch out/CNAME && echo \"example.com\" >> out/CNAME && git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out origin gh-pages",
+    "build": "next build && next export && touch out/.nojekyll && touch out/CNAME && echo \"example.com\" >> out/CNAME && git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out origin gh-pages",
     "start": "next start"
   },
   "repository": {
@@ -21,10 +21,18 @@
   "homepage": "https://github.com/weareonelaw/letterfromhumanity#readme",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.18.0",
     "next": "^7.0.2",
+    "next-redux-wrapper": "^3.0.0-alpha.1",
     "node-sass": "^4.11.0",
     "normalize-scss": "^7.0.1",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "react-scroll": "^1.7.10",
+    "redux": "^4.0.1",
+    "redux-form": "^8.1.0",
+    "redux-promise-middleware": "^6.0.1",
+    "redux-thunk": "^2.2.0"
   }
 }

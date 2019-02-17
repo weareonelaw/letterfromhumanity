@@ -1,21 +1,30 @@
-import '../sass/application.scss';
-import React from 'react';
-import { Provider } from 'react-redux';
-import SignFormContainer from '../components/Form/SignFormContainer';
-import configureStore from '../store/configurateStore';
+import React, { Component } from 'react';
+import { SignFormContainer } from '../containers/Form'
 import ToggleButton from '../components/Menu/ToggleButton';
 import MainMenu from '../components/Menu/MainMenu';
 import SplashScreen from '../components/SplashScreen/SplashScreen';
 import Letter from '../components/Letter/Letter';
+import Page from '../components/Page/Page';
 
-const store = configureStore();
+class Index extends Component {
 
-export default () => (
-  <Provider store={store}>
-    <MainMenu />
-    <ToggleButton />
-    <SplashScreen />
-    <Letter />
-    <SignFormContainer />
-  </Provider>
-);
+  render() {
+    return (
+      <>
+        <MainMenu />
+        <ToggleButton />
+        <Page>
+          <SplashScreen />
+        </Page>
+        <Page>
+          <Letter />
+        </Page>
+        <Page>
+          <SignFormContainer />
+        </Page>
+      </>   
+    )
+  }
+}
+
+export default Index;

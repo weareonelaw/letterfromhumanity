@@ -1,10 +1,10 @@
 import React from 'react';
-import ProgressBar from '../ProgressBar/ProgressBar';
+import ProgressContainer from '../ProgressBar/ProgressContainer';
 
 const Letter = () => (
   <>
     <div>A long letter here...</div>
-    <ProgressBar />
+    <ProgressContainer />
   </>
 );
 

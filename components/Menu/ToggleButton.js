@@ -12,4 +12,4 @@ export default connect(
     menuOpen: state.ui.menuOpen
   }),
   actions
-)(ToggleButton)
+)(ToggleButton);
