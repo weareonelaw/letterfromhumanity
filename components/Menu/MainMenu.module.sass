@@ -1,0 +1,75 @@
+@import '../../sass/variables';
+
+.main-menu
+  z-index: $zindex-fixed;
+  display: inline-block;
+
+  .overlay
+    z-index: $zindex-fixed + 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $onelaw-background-color;
+    opacity: 0;
+    transform: translateX(100%); // Move out of view
+    // Transition OUT:
+    transition: opacity $menu-transition-time linear 0s, transform 0s ease $menu-transition-time; // Wait until opacity is done
+
+  .menu-container
+    display: flex;
+    flex-direction: column;
+    z-index: $zindex-fixed + 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    min-width: 11em;
+    max-width: 80%;
+    background-color: white;
+    color: $onelaw-background-color;
+    transform: translateX(100%); // Move out of view
+    // Transition OUT:
+    transition: transform ($menu-transition-time * 0.8) ease-in 0s;
+
+  &.open
+    .overlay
+      opacity: 0.4;
+      transform: translateX(0); // Move into place
+      // Transition IN:
+      transition: opacity $menu-transition-time linear 0s, transform 0s ease 0s;
+
+    .menu-container
+      overflow-y: auto;
+      transform: translateX(0); // Move into place
+      // Transition IN:
+      transition: transform $menu-transition-time ease-out 0s;
+
+  .close-menu
+    position: absolute;
+    top: 0;
+    right: 0;
+
+  .links
+    margin-top: 70px; // Ugly way of placing below menu icon
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; // For now
+
+    .link
+      a
+        display: block;
+        padding: 0.6em 1em;
+        color: $link-text-color;
+        text-decoration: none;
+
+        &:hover
+          background-color: #EEE;
+
+        &:active // Highlight when pressed
+          color: white;
+          background-color: $link-text-color;
