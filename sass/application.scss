@@ -1,6 +1,7 @@
 @import '~normalize-scss/sass/normalize/import-now';
+@import './variables';
 
 body {
-  background: black;
-  color: white;
+  background: $onelaw-background-color;
+  color: $onelaw-text-color;
 }
