@@ -1,5 +1,7 @@
+require('dotenv').config()
+const path = require('path')
+const Dotenv = require('dotenv-webpack')
 const withSass = require('@zeit/next-sass')
-
 const debug = process.env.NODE_ENV !== "production";
 
 module.exports = withSass({
@@ -8,9 +10,24 @@ module.exports = withSass({
       "/": { page: "/" }
     }
   },
+  // cssModules: true, // TODO: THIS BREAKS :( NEED TO FIX 
   //assetPrefix: '',
   assetPrefix: !debug ? '/letterfromhumanity/' : '',
+  env: {
+    BACKEND_URL: process.env.BACKEND_URL
+  },
   webpack: (config, { dev }) => {
+    config.plugins = config.plugins || []
+
+    config.plugins = [
+      ...config.plugins,
+
+      // Read the .env file
+      new Dotenv({
+        path: path.join(__dirname, '.env'),
+        systemvars: true
+      })
+    ]
     // Perform customizations to webpack config
     // console.log('webpack');
     // console.log(config.module.rules, dev);

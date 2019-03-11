@@ -7,7 +7,6 @@ import Letter from '../components/Letter/Letter';
 import Page from '../components/Page/Page';
 
 class Index extends Component {
-
   render() {
     return (
       <>
