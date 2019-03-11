@@ -1,12 +1,30 @@
+@import '../../sass/variables'
+@import '~breakpoint-sass/stylesheets/breakpoint'
+  
 .signup-form
   display: flex
-  
+  flex-direction: column
+  @include breakpoint($medium-screen)
+    flex-direction: row
+
 .input-row
-  display: inline-block
-  margin-right: 1em
+  margin-bottom: 1em
+  @include breakpoint($medium-screen)
+    margin-right: 1em
 
 .input
-  padding: .5em
+  padding: 1rem
+  background: transparent
+  color: #FFF
+  border: 1px solid #FFF
+  display: block
+  width: 100%
+
+  &::placeholder
+    color: #FFF
   
 .help-text
   display: block
+
+.help-text--has-error
+  color: red

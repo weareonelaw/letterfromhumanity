@@ -1,32 +1,32 @@
-@import '../../sass/variables';
+@import '../../sass/variables'
 
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js
 .menu-toggler
-  z-index: $zindex-fixed + 10;
-  position: fixed;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  padding: 1em;
+  z-index: $zindex-fixed + 10
+  position: fixed
+  top: 0
+  right: 0
+  cursor: pointer
+  padding: 1em
 
   .bar1, .bar2, .bar3
-    width: 39px; // If we want squared the height is: 5px*3 + 6px*4
-    height: 5px;
-    background-color: $onelaw-text-color;
-    margin: 6px 0;
-    transition: 0.2s;
+    width: 39px // If we want squared the height is: 5px*3 + 6px*4
+    height: 5px
+    background-color: $onelaw-text-color
+    margin: 6px 0
+    transition: 0.2s
 
   &.opened // Open
-    background-color: white; // If we have scroll we cheat and avoid visual overlap
+    background-color: white // If we have scroll we cheat and avoid visual overlap
     .bar1, .bar2, .bar3
-      background-color: $onelaw-background-color;
+      background-color: $onelaw-background-color
     .bar1
-      -webkit-transform: rotate(-45deg) translate(-8px, 8px);
-      transform: rotate(-45deg) translate(-8px, 8px);
+      -webkit-transform: rotate(-45deg) translate(-8px, 8px)
+      transform: rotate(-45deg) translate(-8px, 8px)
 
     .bar2
-      opacity: 0;
+      opacity: 0
 
     .bar3
-      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-8px, -8px);
+      -webkit-transform: rotate(45deg) translate(-8px, -8px)
+      transform: rotate(45deg) translate(-8px, -8px)

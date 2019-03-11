@@ -1,10 +1,11 @@
 $onelaw-background-color: black;
 $onelaw-text-color: white;
-
-
 $zindex-fixed: 900;
 
 // Main menu
 $menu-transition-time: 0.2s;
 $menu-item-padding: 0.7em;
 $link-text-color: rgb(64, 64, 64);
+
+// Breakpoints
+$medium-screen: 768px;

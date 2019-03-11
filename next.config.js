@@ -10,7 +10,11 @@ module.exports = withSass({
       "/": { page: "/" }
     }
   },
-  // cssModules: true, // TODO: THIS BREAKS :( NEED TO FIX 
+  cssModules: true,
+  cssLoaderOptions: {
+    importLoaders: 1,
+    localIdentName: "[local]___[hash:base64:5]",
+  },
   //assetPrefix: '',
   assetPrefix: !debug ? '/letterfromhumanity/' : '',
   env: {

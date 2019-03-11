@@ -1,5 +1,11 @@
 @import '~normalize-scss/sass/normalize/import-now';
+@import '~breakpoint-sass/stylesheets/breakpoint';
 @import './variables';
+
+* {
+  box-sizing: border-box;
+}
+
 
 body {
   background: $onelaw-background-color;

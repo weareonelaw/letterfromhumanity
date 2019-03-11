@@ -1,15 +1,21 @@
 import React from 'react';
 import * as actions from '../../store/actions/creators';
 import { connect } from 'react-redux';
-import './ToggleButton.module.sass';
+import styles from './ToggleButton.module.sass';
+import classNames from 'classnames/bind';
+
+let cx = classNames.bind(styles);
 
 const ToggleButton = ({toggleMainMenu, menuOpen}) => {
-  const menuText = (menuOpen) ? "Close menu"  : "Open menu";
+  const className = cx({
+    ['menu-toggler']: true,
+    opened: menuOpen
+  });
   return (
-    <div className={`menu-toggler container ${menuOpen ? 'opened' : ''}`} onClick={toggleMainMenu}>
-      <div className="bar1"></div>
-      <div className="bar2"></div>
-      <div className="bar3"></div>
+    <div className={className} onClick={toggleMainMenu}>
+      <div className={styles['bar1']}></div>
+      <div className={styles['bar2']}></div>
+      <div className={styles['bar3']}></div>
     </div>
   );
 };

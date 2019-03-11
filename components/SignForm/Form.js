@@ -1,36 +1,36 @@
 import React from 'react';
 import { Field } from 'redux-form';
 import { renderField } from './renderField';
-import './Form.module.sass';
+import styles from './Form.module.sass';
+import Button from '../Button';
 
 const Form = ({ handleSubmit, onSubmit }) => (
-  <form onSubmit={handleSubmit(onSubmit)} className="signup-form">
+  <form onSubmit={handleSubmit(onSubmit)} className={styles['signup-form']}>
     <Field
       name="firstName"
       placeholder="First name"
-      className="input"
+      className={styles['input']}
       component={renderField}
-
     />
     <Field
       name="lastName"
       placeholder="Last name"
-      className="input"
+      className={styles['input']}
       component={renderField}
       />
     <Field
       name="email"
       placeholder="Email"
-      className="input"
+      className={styles['input']}
       component={renderField}
       />
     <Field
       name="country"
       placeholder="Where are you located?"
-      className="input"
+      className={styles['input']}
       component={renderField}
       />
-    <button type="submit">Submit</button>
+    <Button type="submit">Submit</Button>
   </form>
 );
 
