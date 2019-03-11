@@ -7,12 +7,11 @@ const ToggleButton = ({toggleMainMenu, menuOpen}) => {
   const menuText = (menuOpen) ? "Close menu"  : "Open menu";
   return (
     <div className={`menu-toggler container ${menuOpen ? 'opened' : ''}`} onClick={toggleMainMenu}>
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+      <div className="bar1"></div>
+      <div className="bar2"></div>
+      <div className="bar3"></div>
     </div>
   );
-  return <button className="menu-toggler" onClick={toggleMainMenu}>{menuText}</button>;
 };
 
 export default connect(
