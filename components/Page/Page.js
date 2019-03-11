@@ -1,8 +1,8 @@
 import React from 'react';
-import './Page.module.sass';
+import styles from './Page.module.sass';
 
 const Page = ({ children }) => (
-  <div className="page">
+  <div className={styles['page']}>
     {children}
   </div>
 );
