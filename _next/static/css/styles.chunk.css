@@ -402,34 +402,157 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   background: black;
   color: white; }
 
-.signup-form {
-  display: flex; }
+.signup-form___1ixX3 {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto; }
 
-.input-row {
-  display: inline-block;
-  margin-right: 1em; }
+.input-row___38Iiw {
+  margin-bottom: 1em; }
 
-.input {
-  padding: .5em; }
+.input___23BFz {
+  padding: 1rem;
+  background: transparent;
+  color: #FFF;
+  border: 1px solid #FFF;
+  display: block;
+  width: 100%; }
+  .input___23BFz::placeholder {
+    color: #FFF; }
 
-.help-text {
+.help-text___3AIMK {
   display: block; }
 
-.progress-bar {
+.help-text--has-error___2v7QC {
+  color: red; }
+
+.btn___2z1Ed {
+  display: inline-block;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #FFFFFF;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  cursor: pointer; }
+
+.btn--block___ZphY1 {
+  display: block;
+  width: 100%; }
+
+.menu-toggler___3glql {
+  z-index: 910;
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  padding: 1em; }
+  .menu-toggler___3glql .bar1___8XMHD, .menu-toggler___3glql .bar2___2bJZC, .menu-toggler___3glql .bar3___2oZB_ {
+    width: 39px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.2s; }
+  .menu-toggler___3glql.opened___3dNsC {
+    background-color: white; }
+    .menu-toggler___3glql.opened___3dNsC .bar1___8XMHD, .menu-toggler___3glql.opened___3dNsC .bar2___2bJZC, .menu-toggler___3glql.opened___3dNsC .bar3___2oZB_ {
+      background-color: black; }
+    .menu-toggler___3glql.opened___3dNsC .bar1___8XMHD {
+      -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+      transform: rotate(-45deg) translate(-8px, 8px); }
+    .menu-toggler___3glql.opened___3dNsC .bar2___2bJZC {
+      opacity: 0; }
+    .menu-toggler___3glql.opened___3dNsC .bar3___2oZB_ {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px); }
+
+.main-menu___1yTvs {
+  z-index: 900;
+  display: inline-block; }
+  .main-menu___1yTvs .overlay___2Cgeh {
+    z-index: 901;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.2s linear 0s, transform 0s ease 0.2s; }
+  .main-menu___1yTvs .menu-container___3fYRu {
+    display: flex;
+    flex-direction: column;
+    z-index: 902;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    min-width: 11em;
+    max-width: 80%;
+    background-color: white;
+    color: black;
+    transform: translateX(100%);
+    transition: transform 0.16s ease-in 0s; }
+  .main-menu___1yTvs.open___K3W4g .overlay___2Cgeh {
+    opacity: 0.4;
+    transform: translateX(0);
+    transition: opacity 0.2s linear 0s, transform 0s ease 0s; }
+  .main-menu___1yTvs.open___K3W4g .menu-container___3fYRu {
+    overflow-y: auto;
+    transform: translateX(0);
+    transition: transform 0.2s ease-out 0s; }
+  .main-menu___1yTvs .close-menu___20vBp {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .main-menu___1yTvs .links___2ainP {
+    margin-top: 70px;
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+    .main-menu___1yTvs .links___2ainP .link___1Rav_ a {
+      display: block;
+      padding: 0.6em 1em;
+      color: #404040;
+      text-decoration: none; }
+      .main-menu___1yTvs .links___2ainP .link___1Rav_ a:hover {
+        background-color: #EEE; }
+      .main-menu___1yTvs .links___2ainP .link___1Rav_ a:active {
+        color: white;
+        background-color: #404040; }
+
+.progress-bar____8Lgk {
   border: 1px solid #ffffff;
   padding: 3px; }
 
-.progress__line {
+.progress__line___a9R8- {
   display: block;
   height: 20px;
-  background-color: red; }
+  background-color: white; }
 
-.page {
-  min-height: 100vh; }
+.page___2lJdm {
+  min-height: 100vh;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

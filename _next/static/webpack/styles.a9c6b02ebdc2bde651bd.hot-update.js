@@ -1,13 +1,14 @@
 webpackHotUpdate("styles",{
 
-/***/ "./components/SignForm/Form.module.sass":
+/***/ "./components/Button/Button.module.sass":
 /*!**********************************************!*\
-  !*** ./components/SignForm/Form.module.sass ***!
+  !*** ./components/Button/Button.module.sass ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin;
+// extracted by mini-css-extract-plugin
+module.exports = {"btn":"btn___2z1Ed","btn--block":"btn--block___ZphY1"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -29,7 +30,7 @@ webpackHotUpdate("styles",{
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1550416624703");
+            injectCss(link, link.href.split("?")[0] + "?unix=1552337461413");
           });
       }
     }
@@ -38,4 +39,4 @@ webpackHotUpdate("styles",{
 /***/ })
 
 })
-//# sourceMappingURL=styles.92e9288c5e37f130b801.hot-update.js.map
+//# sourceMappingURL=styles.a9c6b02ebdc2bde651bd.hot-update.js.map

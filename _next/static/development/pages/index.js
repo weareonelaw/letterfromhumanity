@@ -32,6 +32,52 @@ var Alert = function Alert(_ref) {
 
 /***/ }),
 
+/***/ "./components/Button/index.js":
+/*!************************************!*\
+  !*** ./components/Button/index.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Button_module_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Button.module.sass */ "./components/Button/Button.module.sass");
+/* harmony import */ var _Button_module_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Button_module_sass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames/bind */ "./node_modules/classnames/bind.js");
+/* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames_bind__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/antonkjorcklinden/Development/letterfromhumanity/components/Button/index.js";
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+var cx = classnames_bind__WEBPACK_IMPORTED_MODULE_2___default.a.bind(_Button_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a);
+
+var Button = function Button(_ref) {
+  var _cx;
+
+  var type = _ref.type,
+      children = _ref.children,
+      block = _ref.block;
+  var className = cx((_cx = {}, _defineProperty(_cx, "".concat(_Button_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a.btn), true), _defineProperty(_cx, "".concat(_Button_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['btn--block']), block), _cx));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: type,
+    className: className,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, children);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Button);
+
+/***/ }),
+
 /***/ "./components/Letter/Letter.js":
 /*!*************************************!*\
   !*** ./components/Letter/Letter.js ***!
@@ -80,26 +126,121 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _store_actions_creators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../store/actions/creators */ "./store/actions/creators.js");
+/* harmony import */ var _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MainMenu.module.sass */ "./components/Menu/MainMenu.module.sass");
+/* harmony import */ var _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! classnames/bind */ "./node_modules/classnames/bind.js");
+/* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(classnames_bind__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/antonkjorcklinden/Development/letterfromhumanity/components/Menu/MainMenu.js";
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+
+
+
+
+
+var cx = classnames_bind__WEBPACK_IMPORTED_MODULE_4___default.a.bind(_MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a);
 
 var MainMenu = function MainMenu(_ref) {
-  var menuOpen = _ref.menuOpen;
-  if (menuOpen) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  var _cx;
+
+  var toggleMainMenu = _ref.toggleMainMenu,
+      menuOpen = _ref.menuOpen;
+  var className = cx((_cx = {}, _defineProperty(_cx, 'main-menu', true), _defineProperty(_cx, "open", menuOpen), _cx));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: className,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 15
     },
     __self: this
-  }, "MAIN MENU VISIBLE");else return null;
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['overlay'],
+    onClick: toggleMainMenu,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['menu-container'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['links'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['link'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#sign",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "Sign")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['link'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['link'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#social",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "Social")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['link'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "Contact")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(function (state) {
   return {
     menuOpen: state.ui.menuOpen
   };
-}, null)(MainMenu));
+}, _store_actions_creators__WEBPACK_IMPORTED_MODULE_2__)(MainMenu));
 
 /***/ }),
 
@@ -116,23 +257,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _store_actions_creators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../store/actions/creators */ "./store/actions/creators.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _ToggleButton_module_sass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ToggleButton.module.sass */ "./components/Menu/ToggleButton.module.sass");
+/* harmony import */ var _ToggleButton_module_sass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ToggleButton_module_sass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! classnames/bind */ "./node_modules/classnames/bind.js");
+/* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(classnames_bind__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/antonkjorcklinden/Development/letterfromhumanity/components/Menu/ToggleButton.js";
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
+
+
+
+
+var cx = classnames_bind__WEBPACK_IMPORTED_MODULE_4___default.a.bind(_ToggleButton_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a);
 
 var ToggleButton = function ToggleButton(_ref) {
+  var _cx;
+
   var toggleMainMenu = _ref.toggleMainMenu,
       menuOpen = _ref.menuOpen;
-  var menuText = menuOpen ? "Close menu" : "Open menu";
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  var className = cx((_cx = {}, _defineProperty(_cx, 'menu-toggler', true), _defineProperty(_cx, "opened", menuOpen), _cx));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: className,
     onClick: toggleMainMenu,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 15
     },
     __self: this
-  }, menuText);
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _ToggleButton_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['bar1'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _ToggleButton_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['bar2'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _ToggleButton_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['bar3'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(function (state) {
@@ -163,7 +338,7 @@ var _jsxFileName = "/Users/antonkjorcklinden/Development/letterfromhumanity/comp
 var Page = function Page(_ref) {
   var children = _ref.children;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "page",
+    className: _Page_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['page'],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
@@ -199,14 +374,14 @@ var ProgressBar = function ProgressBar(_ref) {
       hasError = progressData.hasError,
       hasData = progressData.hasData;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "progress-bar",
+    className: _ProgressBar_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['progress-bar'],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
   }, hasError && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "progress__line",
+    className: _ProgressBar_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['progress__line'],
     style: {
       'width': value + '%'
     },
@@ -263,8 +438,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var ProgressContainer =
 /*#__PURE__*/
-function (_React$Component) {
-  _inherits(ProgressContainer, _React$Component);
+function (_Component) {
+  _inherits(ProgressContainer, _Component);
 
   function ProgressContainer() {
     _classCallCheck(this, ProgressContainer);
@@ -285,15 +460,23 @@ function (_React$Component) {
         progressData: progressData,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 14
         },
         __self: this
       });
     }
+  }], [{
+    key: "getInitialProps",
+    value: function getInitialProps(_ref) {
+      var store = _ref.store,
+          isServer = _ref.isServer,
+          pathname = _ref.pathname,
+          query = _ref.query;
+    }
   }]);
 
   return ProgressContainer;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 ;
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(function (state) {
@@ -319,7 +502,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _renderField__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./renderField */ "./components/SignForm/renderField.js");
 /* harmony import */ var _Form_module_sass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Form.module.sass */ "./components/SignForm/Form.module.sass");
 /* harmony import */ var _Form_module_sass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Form_module_sass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Button */ "./components/Button/index.js");
 var _jsxFileName = "/Users/antonkjorcklinden/Development/letterfromhumanity/components/SignForm/Form.js";
+
 
 
 
@@ -330,26 +515,26 @@ var Form = function Form(_ref) {
       onSubmit = _ref.onSubmit;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     onSubmit: handleSubmit(onSubmit),
-    className: "signup-form",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(redux_form__WEBPACK_IMPORTED_MODULE_1__["Field"], {
-    name: "firstName",
-    placeholder: "First name",
-    className: "input",
-    component: _renderField__WEBPACK_IMPORTED_MODULE_2__["renderField"],
+    className: _Form_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['signup-form'],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(redux_form__WEBPACK_IMPORTED_MODULE_1__["Field"], {
+    name: "firstName",
+    placeholder: "First name",
+    className: _Form_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['input'],
+    component: _renderField__WEBPACK_IMPORTED_MODULE_2__["renderField"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(redux_form__WEBPACK_IMPORTED_MODULE_1__["Field"], {
     name: "lastName",
     placeholder: "Last name",
-    className: "input",
+    className: _Form_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['input'],
     component: _renderField__WEBPACK_IMPORTED_MODULE_2__["renderField"],
     __source: {
       fileName: _jsxFileName,
@@ -359,7 +544,7 @@ var Form = function Form(_ref) {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(redux_form__WEBPACK_IMPORTED_MODULE_1__["Field"], {
     name: "email",
     placeholder: "Email",
-    className: "input",
+    className: _Form_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['input'],
     component: _renderField__WEBPACK_IMPORTED_MODULE_2__["renderField"],
     __source: {
       fileName: _jsxFileName,
@@ -369,21 +554,22 @@ var Form = function Form(_ref) {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(redux_form__WEBPACK_IMPORTED_MODULE_1__["Field"], {
     name: "country",
     placeholder: "Where are you located?",
-    className: "input",
+    className: _Form_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['input'],
     component: _renderField__WEBPACK_IMPORTED_MODULE_2__["renderField"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     type: "submit",
+    block: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
-  }, "Submit"));
+  }, "Add your signature to the letter"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Form);
@@ -484,9 +670,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderField", function() { return renderField; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Form_module_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Form.module.sass */ "./components/SignForm/Form.module.sass");
+/* harmony import */ var _Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Form_module_sass__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/antonkjorcklinden/Development/letterfromhumanity/components/SignForm/renderField.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 
 
 var renderField = function renderField(_ref) {
@@ -500,34 +689,34 @@ var renderField = function renderField(_ref) {
       touched = _ref$meta.touched,
       error = _ref$meta.error;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "input-row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, label && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    className: "label",
+    className: _Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['input-row'],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
+    },
+    __self: this
+  }, label && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    className: _Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['label'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
     },
     __self: this
   }, label), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", _extends({}, input, {
     id: id,
     type: type,
     placeholder: placeholder,
-    className: "".concat(className, " ").concat(touched && error ? 'input--has-error' : '', " ").concat(!error && touched ? 'input--has-success' : ''),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  })), touched && error && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "help-text help-text--has-error",
+    className: "".concat(className, " ").concat(touched && error ? _Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['input--has-error'] : '', " ").concat(!error && touched ? _Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['input--has-success'] : ''),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
+    },
+    __self: this
+  })), touched && error && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "".concat(_Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['help-text'], " ").concat(_Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['help-text--has-error']),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
     },
     __self: this
   }, error));
@@ -544,7 +733,7 @@ var renderField = function renderField(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/next/node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/next/node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
@@ -574,7 +763,7 @@ function () {
           case 0:
             _context.prev = 0;
             _context.next = 3;
-            return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(process.env.BACKEND_URL + '/signs', _objectSpread({}, values));
+            return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("https://letter-from-humanity-api-stage.herokuapp.com" + '/signs', _objectSpread({}, values));
 
           case 3:
             req = _context.sent;
@@ -602,7 +791,6 @@ function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (submitForm);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
@@ -2391,6 +2579,65 @@ module.exports = {
   extend: extend,
   trim: trim
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/classnames/bind.js":
+/*!*****************************************!*\
+  !*** ./node_modules/classnames/bind.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(this && this[arg] || arg);
+			} else if (Array.isArray(arg)) {
+				classes.push(classNames.apply(this, arg));
+			} else if (argType === 'object') {
+				for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+						classes.push(this && this[key] || key);
+					}
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if (typeof module !== 'undefined' && module.exports) {
+		classNames.default = classNames;
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return classNames;
+		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}());
 
 
 /***/ }),
@@ -19607,49 +19854,49 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Menu_MainMenu__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 13
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Menu_ToggleButton__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 14
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page_Page__WEBPACK_IMPORTED_MODULE_6__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 15
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SplashScreen_SplashScreen__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 16
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page_Page__WEBPACK_IMPORTED_MODULE_6__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 18
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Letter_Letter__WEBPACK_IMPORTED_MODULE_5__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 19
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page_Page__WEBPACK_IMPORTED_MODULE_6__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 21
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_Form__WEBPACK_IMPORTED_MODULE_1__["SignFormContainer"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 22
         },
         __self: this
       })));
@@ -19691,7 +19938,7 @@ function (_Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toggleMainMenu", function() { return toggleMainMenu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toggleMainMenu", function() { return toggleMainMenu; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getProgress", function() { return getProgress; });
 /* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./types */ "./store/actions/types.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
@@ -19705,7 +19952,7 @@ var toggleMainMenu = function toggleMainMenu() {
 };
 var getProgress = function getProgress() {
   return function (dispatch) {
-    var url = "".concat(process.env.BACKEND_URL, "/stats");
+    var url = "".concat("https://letter-from-humanity-api-stage.herokuapp.com", "/stats");
     dispatch({
       type: _types__WEBPACK_IMPORTED_MODULE_0__["GET_PROGRESS"],
       payload: {
@@ -19714,7 +19961,6 @@ var getProgress = function getProgress() {
     });
   };
 };
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
