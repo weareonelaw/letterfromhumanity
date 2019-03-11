@@ -30,7 +30,7 @@ const Form = ({ handleSubmit, onSubmit }) => (
       className={styles['input']}
       component={renderField}
       />
-    <Button type="submit">Add your signature to the letter</Button>
+    <Button type="submit" block>Add your signature to the letter</Button>
   </form>
 );
 

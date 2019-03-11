@@ -2,15 +2,12 @@
 @import '~breakpoint-sass/stylesheets/breakpoint'
   
 .signup-form
-  display: flex
-  flex-direction: column
-  @include breakpoint($medium-screen)
-    flex-direction: row
+  max-width: 700px
+  margin-left: auto
+  margin-right: auto
 
 .input-row
   margin-bottom: 1em
-  @include breakpoint($medium-screen)
-    margin-right: 1em
 
 .input
   padding: 1rem
