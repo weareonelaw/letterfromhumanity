@@ -10,6 +10,9 @@ module.exports = withSass({
       "/": { page: "/" }
     }
   },
+  sassLoaderOptions: {
+    includePaths: ["node_modules"]
+  },
   cssModules: true,
   cssLoaderOptions: {
     importLoaders: 1,
