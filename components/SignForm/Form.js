@@ -3,9 +3,11 @@ import { Field } from 'redux-form';
 import { renderField } from './renderField';
 import styles from './Form.module.sass';
 import Button from '../Button';
+import Input from '../Input/Input.js';
 
 const Form = ({ handleSubmit, onSubmit }) => (
   <form onSubmit={handleSubmit(onSubmit)} className={styles['signup-form']}>
+    <Input />
     <Field
       name="firstName"
       placeholder="First name"

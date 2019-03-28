@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/weareonelaw/letterfromhumanity#readme",
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
     "@zeit/next-sass": "^1.0.1",
     "axios": "^0.18.0",
     "breakpoint-sass": "^2.7.1",
