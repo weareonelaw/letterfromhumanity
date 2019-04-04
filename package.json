@@ -33,11 +33,13 @@
     "normalize-scss": "^7.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-jss": "^8.6.1",
     "react-redux": "^6.0.0",
     "react-scroll": "^1.7.10",
     "redux": "^4.0.1",
     "redux-form": "^8.1.0",
     "redux-promise-middleware": "^6.0.1",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "styled-jsx": "^3.2.1"
   }
 }
