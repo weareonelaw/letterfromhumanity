@@ -1,7 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { goToAnchor } from 'react-scrollable-anchor';
+
 import * as actions from '../../store/actions/creators';
-import styles from "./MainMenu.module.sass"
+import styles from "./MainMenu.module.sass";
 import classNames from 'classnames/bind';
 
 let cx = classNames.bind(styles);

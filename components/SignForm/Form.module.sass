@@ -1,27 +1,35 @@
 @import '../../sass/variables'
 @import '~breakpoint-sass/stylesheets/breakpoint'
-  
+
 .signup-form
   max-width: 700px
   margin-left: auto
   margin-right: auto
 
-.input-row
-  margin-bottom: 1em
+  .input-row
+    margin-bottom: 1em
 
-.input
-  padding: 1rem
-  background: transparent
-  color: #FFF
-  border: 1px solid #FFF
-  display: block
-  width: 100%
-
-  &::placeholder
+  .input
+    padding: 1rem
+    background: transparent
     color: #FFF
-  
-.help-text
-  display: block
+    border: 1px solid #FFF
+    display: block
+    width: 100%
 
-.help-text--has-error
-  color: red
+    &::placeholder
+      color: #FFF
+
+  .help-text
+    display: block
+
+  .help-text--has-error
+    color: red
+
+  .desc
+    color: $onelaw-grey
+    font-size: 0.8em
+
+  .submit
+    margin-top: 0.6em
+    font-weight: 600

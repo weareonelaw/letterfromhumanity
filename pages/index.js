@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { SignFormContainer } from '../containers/Form'
+import ScrollableAnchor from 'react-scrollable-anchor';
+
+
+import styles from './Index.module.sass';
+import { SignFormContainer } from '../containers/Form';
+import Header from '../components/Header/Header';
 import ToggleButton from '../components/Menu/ToggleButton';
 import MainMenu from '../components/Menu/MainMenu';
 import SplashScreen from '../components/SplashScreen/SplashScreen';
@@ -9,19 +14,35 @@ import Page from '../components/Page/Page';
 class Index extends Component {
   render() {
     return (
-      <>
-        <MainMenu />
+      <div className={styles['layout']}>
         <ToggleButton />
-        <Page>
-          <SplashScreen />
-        </Page>
-        <Page>
-          <Letter />
-        </Page>
-        <Page>
-          <SignFormContainer />
-        </Page>
-      </>   
+        <MainMenu />
+        <Header>
+          Hej<br />då
+          Hej<br />då
+        </Header>
+        <ScrollableAnchor id="top">
+          <div>
+            <Page>
+              <SplashScreen />
+            </Page>
+          </div>
+        </ScrollableAnchor>
+        <ScrollableAnchor id="about">
+          <div>
+            <Page>
+              <Letter />
+            </Page>
+          </div>
+        </ScrollableAnchor>
+        <ScrollableAnchor id="sign">
+          <div>
+            <Page>
+              <SignFormContainer />
+            </Page>
+          </div>
+        </ScrollableAnchor>
+      </div>
     )
   }
 }
