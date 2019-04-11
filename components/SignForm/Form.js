@@ -5,35 +5,30 @@ import styles from './Form.module.sass';
 import Button from '../Button';
 import Input from '../Input/Input.js';
 
-const Form = ({ handleSubmit, onSubmit }) => (
-  <form onSubmit={handleSubmit(onSubmit)} className={styles['signup-form']}>
-    <Input />
-    <Field
-      name="firstName"
-      placeholder="First name"
-      className={styles['input']}
-      component={renderField}
-    />
-    <Field
-      name="lastName"
-      placeholder="Last name"
-      className={styles['input']}
-      component={renderField}
-      />
-    <Field
-      name="email"
-      placeholder="Email"
-      className={styles['input']}
-      component={renderField}
-      />
-    <Field
-      name="country"
-      placeholder="Where are you located?"
-      className={styles['input']}
-      component={renderField}
-      />
-    <Button type="submit" block>Add your signature to the letter</Button>
-  </form>
-);
+
+class Form extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      country: '',
+    }
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.props.handleSubmit(this.props.onSubmit)} className={styles['signup-form']}>
+        <Input label="First name" required onChange={(value) => this.setState({ firstName: value })} />
+        <Input label="Last name" onChange={(value) => this.setState({ lastName: value })} />
+        <Input label="Email" required onChange={(value) => this.setState({ email: value })} />
+        <Input label="Where are you located?" onChange={(value) => this.setState({ country: value })} />
+
+        <Button type="submit" block>Add your signature to the letter</Button>
+      </form>
+    );
+  }
+}
 
 export default Form;
