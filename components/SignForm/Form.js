@@ -19,14 +19,22 @@ class Form extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.props.handleSubmit(this.props.onSubmit)} className={styles['signup-form']}>
-        <Input label="First name" required onChange={(value) => this.setState({ firstName: value })} />
-        <Input label="Last name" onChange={(value) => this.setState({ lastName: value })} />
-        <Input label="Email" required onChange={(value) => this.setState({ email: value })} />
-        <Input label="Where are you located?" onChange={(value) => this.setState({ country: value })} />
+      <div className={styles['signup-form']}>
+        <form onSubmit={this.props.handleSubmit(this.props.onSubmit)}>
+          <Input label="First name" required onChange={(value) => this.setState({ firstName: value })} />
+          <Input label="Last name" onChange={(value) => this.setState({ lastName: value })} />
+          <Input label="Email" required onChange={(value) => this.setState({ email: value })} />
+          <Input label="Where are you located?" onChange={(value) => this.setState({ country: value })} />
 
-        <Button type="submit" block>Add your signature to the letter</Button>
-      </form>
+          <p className={styles['desc']}>
+            When the signature is sent to the recipient, only your first and last name are visible.
+            We use your email address at the collection of names to be sure that each signature is unique.
+            The email address will not be saved in any other way.
+            Read more about how we handle your <a href="#">personal information</a>.
+          </p>
+          <Button className={styles['submit']} type="submit" block>Sign the letter</Button>
+        </form>
+      </div>
     );
   }
 }

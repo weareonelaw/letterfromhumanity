@@ -1,10 +1,14 @@
 import React from 'react';
 
+import styles from './SplashScreen.module.sass';
+
 const SplashScreen = () => (
-  <>
-    <div>WE ARE ONELAW LOGO HERE</div>
-    <h1>#letterfromhumanity</h1>
-  </>
+  <div className={styles['splash-screen']}>
+    <h1 className={styles['title']}>#letterfromhumanity</h1>
+    <p className={styles['desc']}>
+      Be part of a World Record, and sign the letter that binds humanity together as one
+    </p>
+  </div>
 );
 
 export default SplashScreen;
