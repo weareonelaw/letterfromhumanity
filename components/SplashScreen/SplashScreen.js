@@ -1,13 +1,15 @@
 import React from 'react';
 
+import Logo from '../Logo/Logo';
+
 import styles from './SplashScreen.module.sass';
 
 const SplashScreen = () => (
   <div className={styles['splash-screen']}>
-    <h1 className={styles['title']}>#letterfromhumanity</h1>
-    <p className={styles['desc']}>
-      Be part of a World Record, and sign the letter that binds humanity together as one
-    </p>
+    {/* <img className={styles['logo']} src="/static/onelaw-logo.svg" /> */}
+    <div className={styles['logo']}>
+      <Logo />
+    </div>
   </div>
 );
 
