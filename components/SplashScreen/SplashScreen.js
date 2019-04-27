@@ -6,7 +6,6 @@ import styles from './SplashScreen.module.sass';
 
 const SplashScreen = () => (
   <div className={styles['splash-screen']}>
-    {/* <img className={styles['logo']} src="/static/onelaw-logo.svg" /> */}
     <div className={styles['logo']}>
       <Logo />
     </div>

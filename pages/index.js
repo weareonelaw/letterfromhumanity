@@ -18,10 +18,7 @@ class Index extends Component {
       <div className={styles['layout']}>
         <ToggleButton />
         <MainMenu />
-        <Header>
-          Hej<br />då
-          Hej<br />då
-        </Header>
+        <Header />
         <ScrollableAnchor id="top">
           <div>
             <Page>

@@ -5,26 +5,38 @@ import styles from './Form.module.sass';
 import Button from '../Button';
 import Input from '../Input/Input.js';
 
+function input(props) {
+  console.log(props)
+  return <input {...props} />
+}
 
 class Form extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      firstName: '',
-      lastName: '',
-      email: '',
-      country: '',
-    }
-  }
-
   render() {
     return (
       <div className={styles['signup-form']}>
         <form onSubmit={this.props.handleSubmit(this.props.onSubmit)}>
-          <Input label="First name" required onChange={(value) => this.setState({ firstName: value })} />
-          <Input label="Last name" onChange={(value) => this.setState({ lastName: value })} />
-          <Input label="Email" required onChange={(value) => this.setState({ email: value })} />
-          <Input label="Where are you located?" onChange={(value) => this.setState({ country: value })} />
+          <Field
+            name="firstname"
+            component={Input}
+            placeholder="First name"
+            required
+          />
+          <Field
+            name="lastname"
+            component={Input}
+            placeholder="Last name"
+          />
+          <Field
+            name="email"
+            component={Input}
+            placeholder="Email"
+            required
+          />
+           <Field
+            name="location"
+            component={Input}
+            placeholder="Where are you located?"
+          />
 
           <p className={styles['desc']}>
             When the signature is sent to the recipient, only your first and last name are visible.

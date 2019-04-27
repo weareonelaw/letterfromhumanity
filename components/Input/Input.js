@@ -21,30 +21,23 @@ const styles = theme => ({
   cssFocused: {}
 });
 
-class InputClass extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      uniqueId: Math.round(Math.random() * 10000),
-    }
-  }
-  render() {
-    const { classes, label, required } = this.props;
-    return (
-      <FormControl fullWidth required={required} margin="dense" >
-        <InputLabel
-          htmlFor={`custom-css-standard-input-${this.state.uniqueId}`}
-        >
-          {label}
-        </InputLabel>
-        <Input
-          id={`custom-css-standard-input-${this.state.uniqueId}`}
-          fullWidth
-          onChange={(event) => this.props.onChange && this.props.onChange(event.currentTarget.value)}
-        />
-      </FormControl>
-    );
-  }
+function InputClass({ classes, placeholder, name, required, onChange, input }) {
+  return (
+    <FormControl fullWidth required={required} margin="dense" >
+      <InputLabel
+        htmlFor={`custom-css-standard-input-${name}`}
+      >
+        {placeholder}
+      </InputLabel>
+      <Input
+        id={`custom-css-standard-input-${name}`}
+        fullWidth
+        onChange={(event) => input.onChange && input.onChange(event.currentTarget.value)}
+        name={input.name}
+        value={input.value}
+      />
+    </FormControl>
+  );
 }
 
 InputClass.props = {
@@ -52,3 +45,8 @@ InputClass.props = {
 };
 
 export default withStyles(styles)(InputClass);
+
+function input(props) {
+  console.log(props)
+  return <input {...props} />
+}
