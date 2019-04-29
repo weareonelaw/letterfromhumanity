@@ -8,6 +8,7 @@ import Header from '../components/Header/Header';
 import ToggleButton from '../components/Menu/ToggleButton';
 import MainMenu from '../components/Menu/MainMenu';
 import SplashScreen from '../components/SplashScreen/SplashScreen';
+import HashtagIntro from '../components/HashtagIntro/HashtagIntro';
 import Letter from '../components/Letter/Letter';
 import Page from '../components/Page/Page';
 
@@ -17,14 +18,18 @@ class Index extends Component {
       <div className={styles['layout']}>
         <ToggleButton />
         <MainMenu />
-        <Header>
-          Hej<br />då
-          Hej<br />då
-        </Header>
+        <Header />
         <ScrollableAnchor id="top">
           <div>
             <Page>
               <SplashScreen />
+            </Page>
+          </div>
+        </ScrollableAnchor>
+        <ScrollableAnchor id="intro">
+          <div>
+            <Page>
+              <HashtagIntro />
             </Page>
           </div>
         </ScrollableAnchor>
