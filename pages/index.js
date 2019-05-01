@@ -19,13 +19,7 @@ class Index extends Component {
         <ToggleButton />
         <MainMenu />
         <Header />
-        <ScrollableAnchor id="top">
-          <div>
-            <Page>
-              <SplashScreen />
-            </Page>
-          </div>
-        </ScrollableAnchor>
+        <SplashScreen />
         <ScrollableAnchor id="intro">
           <div>
             <Page>
