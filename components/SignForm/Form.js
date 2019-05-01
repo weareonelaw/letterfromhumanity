@@ -42,7 +42,7 @@ class Form extends React.Component {
             When the signature is sent to the recipient, only your first and last name are visible.
             We use your email address at the collection of names to be sure that each signature is unique.
             The email address will not be saved in any other way.
-            Read more about how we handle your <a href="#">personal information</a>.
+            Read more about how we handle your <a href="#" className={styles['link']}>personal information</a>.
           </p>
           <Button className={styles['submit']} type="submit" block>Sign the letter</Button>
         </form>

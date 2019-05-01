@@ -9,6 +9,7 @@ import ToggleButton from '../components/Menu/ToggleButton';
 import MainMenu from '../components/Menu/MainMenu';
 import SplashScreen from '../components/SplashScreen/SplashScreen';
 import HashtagIntro from '../components/HashtagIntro/HashtagIntro';
+import Contact from '../components/Contact/Contact';
 import Letter from '../components/Letter/Letter';
 import Page from '../components/Page/Page';
 
@@ -44,6 +45,13 @@ class Index extends Component {
           <div>
             <Page>
               <SignFormContainer />
+            </Page>
+          </div>
+        </ScrollableAnchor>
+        <ScrollableAnchor id="contact">
+          <div>
+            <Page>
+              <Contact />
             </Page>
           </div>
         </ScrollableAnchor>
