@@ -5,11 +5,6 @@ import styles from './Form.module.sass';
 import Button from '../Button';
 import Input from '../Input/Input.js';
 
-function input(props) {
-  console.log(props)
-  return <input {...props} />
-}
-
 class Form extends React.Component {
   render() {
     return (
