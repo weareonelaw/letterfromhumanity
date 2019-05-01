@@ -1,3 +1,5 @@
+@import '../../sass/variables'
+
 .btn
   display: inline-block
   font-weight: 400
@@ -9,13 +11,26 @@
   -ms-user-select: none
   user-select: none
   background-color: #FFFFFF
-  border: 1px solid transparent
+  border: 1px solid #FFF
   padding: .375rem .75rem
   font-size: 1rem
   line-height: 1.5
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
   cursor: pointer
-  
+  font-family: 'Source Sans Pro', sans-serif
+
+  &:hover
+    background-color: $onelaw-background-color
+    color: white
+
+.secondary
+  background-color: $onelaw-background-color
+  color: white
+
+  &:hover
+    background-color: white
+    color: $onelaw-background-color
+
 .btn--block
   display: block
   width: 100%

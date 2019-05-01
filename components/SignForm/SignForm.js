@@ -1,13 +1,13 @@
 import React from 'react';
 import Form from './Form'
-import Thanks from './Thanks';
+import ThanksContainer from './ThanksContainer';
 import submitForm from './submitForm';
 import Alert from '../Alert'
 import styles from "./SignForm.module.sass";
 
 export const SignForm = ({ submitSucceeded, submitFailed, handleSubmit }) => {
   if(submitSucceeded) return (
-    <Thanks />
+    <ThanksContainer />
   )
   else return (
     <div className={styles["form-wrapper"]}>

@@ -3,15 +3,16 @@ import styles from './Button.module.sass';
 import classNames from 'classnames/bind';
 let cx = classNames.bind(styles);
 
-const Button = ({ type, children, block, className }) => {
+const Button = ({ type, children, block, className, secondary, onClick }) => {
   let buttonClassNames = cx({
     [`${styles.btn}`]: true,
     [`${styles['btn--block']}`]: block,
+    [`${styles['secondary']}`]: secondary,
     [className]: true
   });
 
   return (
-    <button type={type} className={buttonClassNames}>{children}</button>
+    <button type={type} className={buttonClassNames} onClick={onClick}>{children}</button>
   )
 }
 

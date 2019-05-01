@@ -1,19 +1,17 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import ProgressBar from './ProgressBar';
-import * as actions from "../../store/actions/creators";
 
-class ProgressContainer extends Component {
+import Thanks from './Thanks';
+import * as actions from "../../store/actions/creators";
+import { formatInteger } from "../../utils/numbers";
+
+class ThanksContainer extends Component {
   componentDidMount() {
     this.props.getProgress();
   }
-
-  static getInitialProps({store, isServer, pathname, query}) {
-  }
-
   render() {
     const { progressData } = this.props;
-    return <ProgressBar progressData={progressData} />
+    return <Thanks numberSigns={formatInteger(progressData.value)} />
   }
 };
 
@@ -22,4 +20,4 @@ export default connect(
     progressData: state.progress
   }),
   actions
-)(ProgressContainer)
+)(ThanksContainer)
