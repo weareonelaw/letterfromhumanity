@@ -20,7 +20,7 @@ const uiReducer = (
     case GET_PROGRESS_PENDING:
       return { ...state, isLoading: true };
     case GET_PROGRESS_FULFILLED:
-      return { ...state, isLoading: false, hasData: true };
+      return { ...state, value: action.payload.data.signatures, isLoading: false, hasData: true };
     case GET_PROGRESS_REJECTED:
       return { ...state, isLoading: false, hasError: true };
     default:
