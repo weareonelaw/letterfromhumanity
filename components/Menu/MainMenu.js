@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { goToAnchor } from 'react-scrollable-anchor';
 
 import * as actions from '../../store/actions/creators';
 import styles from "./MainMenu.module.sass";
@@ -22,6 +21,7 @@ const MainMenu = ({ toggleMainMenu, menuOpen }) => {
           <li className={styles['link']}><a href="#about">About</a></li>
           <li className={styles['link']}><a href="#social">Social</a></li>
           <li className={styles['link']}><a href="#contact">Contact</a></li>
+          <li className={styles['link']}><a href="#artists">Artists</a></li>
         </ul>
       </div>
     </div>
