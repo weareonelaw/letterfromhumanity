@@ -1,14 +1,17 @@
-@import '../../sass/variables'
+@import ../../sass/variables
 
 .header
-  z-index: $zindex-fixed
-  position: fixed
-  width: 100%
-  background-color: $onelaw-background-color
-  text-align: center
-  height: 3em
+    z-index: $zindex-fixed
+    display: flex
+    justify-content: center
+    position: fixed
+    width: 100%
+    padding: $base-spacing
+    background-color: $onelaw-background-color
+    text-align: center
 
-  .logo
-    margin-top: 0.75em // Vertical center alignment
-    svg
-      height: 1.5em
+    .logo
+
+        svg
+            max-width: 64px
+            max-height: 16px
