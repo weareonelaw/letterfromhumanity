@@ -40,12 +40,8 @@ class MyApp extends App {
             content={this.pageContext ? this.pageContext.theme.palette.primary.main : null}
           />
           <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,400i,600,700"
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-          />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
           />
         </Head>
         <JssProvider

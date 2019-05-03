@@ -12,16 +12,22 @@
 
 .mid-text
   position: absolute
+  height: 100%
   left: 50%
-  top: 50%
-  transform: translate(-50%, -60%)
+  transform: translateX(-50%)
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.signs
+  color: white
+  margin-bottom: 0.75em
 
 .signs-number
-  font-weight: bold
-  color: white
+  font-weight: 600
 
 .goal-desc
-  font-size: 0.8em
+  font-size: 0.875em
 
 .unfilled
   stroke: $onelaw-text-color
