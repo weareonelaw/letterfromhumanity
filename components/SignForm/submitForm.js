@@ -1,15 +1,12 @@
 import axios from 'axios';
-import { SubmissionError } from 'redux-form';
+import handleError from '../../helpers/handleError';
 
-const submitForm = async (values) => {
-  try {
-    await axios.post(process.env.BACKEND_URL + '/signatures/', {
+// TODO: Handle when no connection to internet is present.
+  const submitForm = async (values) => {
+    return axios.post(process.env.BACKEND_URL + '/signatures/', {
       ...values
-    });
-  } catch (err) {
-    // TODO: Handle when no connection to internet is present.
-    throw new SubmissionError({ _error: err.response })
-  }
+    })
+  .catch((err) => handleError(err));
 };
 
 export default submitForm;
