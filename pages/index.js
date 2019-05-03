@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
-
 import styles from './Index.module.sass';
 import { SignFormContainer } from '../containers/Form';
 import Header from '../components/Header/Header';
@@ -14,13 +13,34 @@ import Letter from '../components/Letter/Letter';
 import Page from '../components/Page/Page';
 
 class Index extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showSplashScreen: true,
+    };
+  }
+
+  componentDidMount() {
+    this.timeoutId = setTimeout(() => {
+      this.setState({
+        showSplashScreen: false,
+      });
+    }, 2000); // Needs to align with css animation for SplashScreen
+  }
+
+  componentWillUnmount() {
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId);
+    }
+  }
+
   render() {
     return (
       <div className={styles['layout']}>
         <ToggleButton />
         <MainMenu />
         <Header />
-        <SplashScreen />
+        {this.state.showSplashScreen && <SplashScreen />}
         <ScrollableAnchor id="intro">
           <div>
             <Page>
