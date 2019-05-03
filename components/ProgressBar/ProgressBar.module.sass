@@ -1,8 +1,32 @@
-.progress-bar
-  border: 1px solid #ffffff
-  padding: 3px
+@import '../../sass/variables'
 
-.progress__line
-  display: block
-  height: 20px
-  background-color: white
+.progress-bar
+  margin: 1em
+  text-align: center
+  position: relative
+
+.svg
+  transform: rotate(180deg)
+  width: 60%
+  max-width: 200px
+
+.mid-text
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -60%)
+
+.signs-number
+  font-weight: bold
+  color: white
+
+.goal-desc
+  font-size: 0.8em
+
+.unfilled
+  stroke: $onelaw-text-color
+  fill: transparent
+
+.filled
+  stroke: white
+  fill: transparent
