@@ -5,7 +5,7 @@ import submitForm from './submitForm';
 import Alert from '../Alert'
 import styles from "./SignForm.module.sass";
 
-export const SignForm = ({ submitSucceeded, submitFailed, handleSubmit }) => {
+export const SignForm = ({ submitSucceeded, submitFailed, handleSubmit, error = 'Oh no! Something went wrong. Please check all fields and try again.' }) => {
   if(submitSucceeded) return (
     <ThanksContainer />
   )
@@ -14,7 +14,7 @@ export const SignForm = ({ submitSucceeded, submitFailed, handleSubmit }) => {
       <Form onSubmit={submitForm} handleSubmit={handleSubmit} />
       <Alert
         show={submitFailed}
-        message="Oh no! Something went wrong. Please check all fields and try again."
+        message={error}
       />
     </div>
   );
