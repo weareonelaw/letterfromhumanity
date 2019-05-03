@@ -20,7 +20,11 @@ const ProgressBar = ( {progressData} ) => {
   return (
     <div className={styles['progress-bar']}>
       <div className={styles['mid-text']}>
-        <p className={styles['signs-number']}>{formatInteger(value)}<br />signatures</p>
+        <p className={styles['signs']}>
+          <span className={styles['signs-number']}>{formatInteger(value)}</span>
+          <br />
+          signatures
+        </p>
         <p className={styles['goal-desc']}>First goal: {formatInteger(progressGoal)}</p>
       </div>
       <svg
