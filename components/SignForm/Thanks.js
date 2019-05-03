@@ -13,6 +13,12 @@ class Thanks extends Component {
     this.copyToClipboard = this.copyToClipboard.bind(this);
   }
 
+  componentWillUnmount() {
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId);
+    }
+  }
+
   copyToClipboard(str) {
     const el = document.createElement('textarea');
     el.value = str;
@@ -45,6 +51,11 @@ class Thanks extends Component {
             onClick={() => {
               const url = window.location.origin;
               this.copyToClipboard(url);
+              this.timeoutId = setTimeout(() => {
+                this.setState({
+                  copiedUrl: false,
+                });
+              }, 5000);
             }}
           >
             {this.state.copiedUrl ? 'Link copied to clipboard!' : 'Share the message'}
@@ -53,16 +64,16 @@ class Thanks extends Component {
             className={styles['btn']}
             block
             secondary
+            href="https://www.instagram.com/weareonelaw"
+            target="_blank"
           >
-            <a href="https://www.instagram.com/weareonelaw" target="_blank">
-              Follow the project on Instagram
-            </a>
+            Follow the project on Instagram
           </Button>
           <Button
             className={styles['btn']}
             block
             secondary
-            onClick={() => goToAnchor('about')}
+            href="#about"
           >
             Read more about the project
           </Button>
