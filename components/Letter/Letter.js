@@ -1,9 +1,11 @@
 import React from 'react';
 import ProgressContainer from '../ProgressBar/ProgressContainer';
 
+import styles from "./Letter.module.sass";
+
 const Letter = () => (
   <>
-    <p>Dear leaders of the world,</p>
+    <h2 className={styles['header']}>Dear leaders of the world,</h2>
 
     <p>This is a letter signed by a significant part of humanity – all of us connected to you.</p>
 
