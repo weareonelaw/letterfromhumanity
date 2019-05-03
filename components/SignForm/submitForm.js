@@ -3,7 +3,7 @@ import { SubmissionError } from 'redux-form';
 
 const submitForm = async (values) => {
   try {
-    req = await axios.post(process.env.BACKEND_URL + '/signatures/', {
+    await axios.post(process.env.BACKEND_URL + '/signatures/', {
       ...values
     });
   } catch (err) {
