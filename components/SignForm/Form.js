@@ -25,6 +25,7 @@ class Form extends React.Component {
             name="email"
             component={Input}
             placeholder="Email"
+            type="email"
             required
           />
            <Field

@@ -1,42 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Input from '@material-ui/core/Input';
-import FormControl from '@material-ui/core/FormControl';
-import InputLabel from '@material-ui/core/InputLabel';
+import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-  },
-  margin: {
-    margin: theme.spacing.unit,
-  },
-  cssLabel: {
-    '&$cssFocused': {
-      color: 'purple',
-    },
-  },
-  cssFocused: {}
+    marginBottom: 20,
+  }
 });
 
-function InputClass({ classes, placeholder, name, required, onChange, input }) {
+function InputClass({ classes, placeholder, name, required, onChange, input, type, label, meta: { touched, invalid, error, warning }, ...custom }) {
+
   return (
-    <FormControl fullWidth required={required} margin="dense" >
-      <InputLabel
-        htmlFor={`custom-css-standard-input-${name}`}
-      >
-        {placeholder}
-      </InputLabel>
-      <Input
-        id={`custom-css-standard-input-${name}`}
+    <div>
+      <TextField
         fullWidth
-        onChange={(event) => input.onChange && input.onChange(event.currentTarget.value)}
-        name={input.name}
-        value={input.value}
+        label={placeholder}
+        error={touched && invalid}
+        helperText={touched && error}
+        className={classes.root}
+        variant="outlined"  
+        {...input}
+        {...custom}
       />
-    </FormControl>
+    </div>
   );
 }
 
@@ -45,8 +34,3 @@ InputClass.props = {
 };
 
 export default withStyles(styles)(InputClass);
-
-function input(props) {
-  console.log(props)
-  return <input {...props} />
-}
