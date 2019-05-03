@@ -8,7 +8,12 @@ const styles = theme => ({
     display: 'flex',
     flexWrap: 'wrap',
     marginBottom: 20,
-  }
+  },
+  notchedOutline: {
+    borderWidth: '2px',
+    borderColor: 'white !important',
+    borderRadius: 0
+  },
 });
 
 function InputClass({ classes, placeholder, name, required, onChange, input, type, label, meta: { touched, invalid, error, warning }, ...custom }) {
@@ -21,6 +26,11 @@ function InputClass({ classes, placeholder, name, required, onChange, input, typ
         error={touched && invalid}
         helperText={touched && error}
         className={classes.root}
+        InputProps={{
+          classes: {
+            notchedOutline: classes.notchedOutline,
+          }
+        }}
         variant="outlined"  
         {...input}
         {...custom}
