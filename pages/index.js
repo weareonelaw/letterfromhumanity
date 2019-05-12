@@ -10,13 +10,16 @@ import SplashScreen from '../components/SplashScreen/SplashScreen';
 import HashtagIntro from '../components/HashtagIntro/HashtagIntro';
 import Contact from '../components/Contact/Contact';
 import Letter from '../components/Letter/Letter';
+import Countdown from '../components/Countdown/Countdown';
 import Page from '../components/Page/Page';
+import { EVENT_DATE } from '../utils/constants';
 
 class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
       showSplashScreen: true,
+      showCountdown: new Date() < new Date(EVENT_DATE),
     };
   }
 
@@ -40,28 +43,42 @@ class Index extends Component {
         <ToggleButton />
         <MainMenu />
         <Header />
+
         {this.state.showSplashScreen && <SplashScreen />}
+
         <ScrollableAnchor id="intro">
           <div>
             <Page>
-              <HashtagIntro />
+              {this.state.showCountdown ?
+                <Countdown
+                  date={EVENT_DATE}
+                  onComplete={() => setTimeout(() => {
+                    this.setState({showCountdown: false});
+                  }, 1000)}
+                />
+                :
+                <HashtagIntro />
+              }
             </Page>
           </div>
         </ScrollableAnchor>
+
         <ScrollableAnchor id="about">
           <div>
             <Page>
-              <Letter />
+              <Letter showProgress={!this.state.showCountdown} />
             </Page>
           </div>
         </ScrollableAnchor>
-        <ScrollableAnchor id="sign">
+
+        {!this.state.showCountdown && <ScrollableAnchor id="sign">
           <div>
             <Page>
               <SignFormContainer />
             </Page>
           </div>
-        </ScrollableAnchor>
+        </ScrollableAnchor>}
+
         <ScrollableAnchor id="contact">
           <div>
             <Page>

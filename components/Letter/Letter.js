@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ProgressContainer from '../ProgressBar/ProgressContainer';
 
 import styles from "./Letter.module.sass";
 
-const Letter = () => (
+const Letter = ({ showProgress }) => (
   <>
     <h2 className={styles['header']}>Dear leaders of the world,</h2>
 
@@ -14,8 +15,17 @@ const Letter = () => (
     <p>Therefore, we are writing to you with one purpose; let this letter echo through your next major decision. Make that decision for everyone you love, have ever loved and will ever love. Make it for earth, our blue little home that nourishes our hearts and makes them beat. Make it for humanity. Because from the cosmic perspective, we all share the same origin, the same ability to love, the same home. All of us.</p>
 
     <p>From the cosmic perspective, we are one. As one, we can change the world.</p>
-    <ProgressContainer />
+
+    {showProgress && <ProgressContainer />}
   </>
 );
+
+Letter.defaultProps = {
+  showProgress: true,
+};
+
+Letter.props = {
+  showProgress: PropTypes.bool,
+};
 
 export default Letter;
