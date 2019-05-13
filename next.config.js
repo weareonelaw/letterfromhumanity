@@ -18,8 +18,7 @@ module.exports = withSass({
     importLoaders: 1,
     localIdentName: "[local]___[hash:base64:5]",
   },
-  //assetPrefix: '',
-  assetPrefix: !debug ? '/letterfromhumanity/' : '',
+  // assetPrefix: !debug ? '/letterfromhumanity/' : '',
   env: {
     BACKEND_URL: process.env.BACKEND_URL
   },
