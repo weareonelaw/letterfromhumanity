@@ -102,6 +102,79 @@ var Button = function Button(_ref) {
 
 /***/ }),
 
+/***/ "./components/Checkbox/Checkbox.js":
+/*!*****************************************!*\
+  !*** ./components/Checkbox/Checkbox.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Checkbox_module_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Checkbox.module.sass */ "./components/Checkbox/Checkbox.module.sass");
+/* harmony import */ var _Checkbox_module_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Checkbox_module_sass__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Checkbox/Checkbox.js";
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+
+var Checkbox = function Checkbox(_ref) {
+  var input = _ref.input,
+      label = _ref.label,
+      type = _ref.type,
+      id = _ref.id,
+      _ref$meta = _ref.meta,
+      touched = _ref$meta.touched,
+      error = _ref$meta.error,
+      warning = _ref$meta.warning;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _Checkbox_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['wrapper'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", _extends({}, input, {
+    placeholder: label,
+    type: type,
+    id: id,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: id,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, " ", label), touched && (error && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "".concat(_Checkbox_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['form-helper'], " ").concat(_Checkbox_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['form-helper--has-error']),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, error) || warning && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _Checkbox_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['form-helper'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, warning)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Checkbox);
+
+/***/ }),
+
 /***/ "./components/Contact/Contact.js":
 /*!***************************************!*\
   !*** ./components/Contact/Contact.js ***!
@@ -155,72 +228,59 @@ var Contact = function Contact() {
       lineNumber: 11
     },
     __self: this
-  }, "press@letterfromhumanity.org"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "tel:+468123123",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, "+46 8 123 123")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+  }, "press@letterfromhumanity.org")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: _Contact_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['sub-heading'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 14
     },
     __self: this
   }, "General Questions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: _Contact_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['desc'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "mailto:info@letterfromhumanity.org",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 16
     },
     __self: this
   }, "info@letterfromhumanity.org")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: _Contact_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['sub-heading'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 19
     },
     __self: this
   }, "Instagram"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: _Contact_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['desc'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.instagram.com/weareonelaw",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 21
     },
     __self: this
   }, "@weareonelaw"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 22
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.instagram.com/letterfromhumanity",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 23
     },
     __self: this
   }, "@letterfromhumanity")));
@@ -545,7 +605,22 @@ var HashtagIntro = function HashtagIntro() {
       lineNumber: 8
     },
     __self: this
-  }, "Be part of a World Record, and sign the letter that binds humanity together as one"));
+  }, "Be part of a World Record, and sign the letter that binds humanity together as one"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#about",
+    className: _HashtagIntro_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['scroll-down'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, "Scroll down to explore", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _HashtagIntro_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['chevron'],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HashtagIntro);
@@ -943,49 +1018,21 @@ var MainMenu = function MainMenu(_ref) {
       lineNumber: 23
     },
     __self: this
-  }, "About")), released && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_4___default.a['link'],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#social",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, "Social")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_4___default.a['link'],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "#contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: this
-  }, "Contact")), released && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_4___default.a['link'],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#artists",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, "Artists")))));
+  }, "Contact")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(function (state) {
@@ -1324,7 +1371,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var redux_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-form */ "./node_modules/redux-form/es/index.js");
-/* harmony import */ var _renderField__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./renderField */ "./components/SignForm/renderField.js");
+/* harmony import */ var _Checkbox_Checkbox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Checkbox/Checkbox */ "./components/Checkbox/Checkbox.js");
 /* harmony import */ var _Form_module_sass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Form.module.sass */ "./components/SignForm/Form.module.sass");
 /* harmony import */ var _Form_module_sass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Form_module_sass__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Button */ "./components/Button/index.js");
@@ -1438,13 +1485,24 @@ function (_React$Component) {
           lineNumber: 41
         },
         __self: this
-      }, "personal information"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "personal information"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(redux_form__WEBPACK_IMPORTED_MODULE_1__["Field"], {
+        name: "agree",
+        id: "agree",
+        component: _Checkbox_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"],
+        type: "checkbox",
+        label: "I understand and want to sign the letter",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
         className: _Form_module_sass__WEBPACK_IMPORTED_MODULE_3___default.a['submit'],
         type: "submit",
         block: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 52
         },
         __self: this
       }, "Sign the letter")));
@@ -1792,72 +1850,6 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./components/SignForm/renderField.js":
-/*!********************************************!*\
-  !*** ./components/SignForm/renderField.js ***!
-  \********************************************/
-/*! exports provided: renderField */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderField", function() { return renderField; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Form_module_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Form.module.sass */ "./components/SignForm/Form.module.sass");
-/* harmony import */ var _Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Form_module_sass__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/SignForm/renderField.js";
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-
-
-var renderField = function renderField(_ref) {
-  var input = _ref.input,
-      label = _ref.label,
-      placeholder = _ref.placeholder,
-      type = _ref.type,
-      id = _ref.id,
-      className = _ref.className,
-      _ref$meta = _ref.meta,
-      touched = _ref$meta.touched,
-      error = _ref$meta.error;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['input-row'],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, label && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    className: _Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['label'],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, label), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", _extends({}, input, {
-    id: id,
-    type: type,
-    placeholder: placeholder,
-    className: "".concat(className, " ").concat(touched && error ? _Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['input--has-error'] : '', " ").concat(!error && touched ? _Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['input--has-success'] : ''),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  })), touched && error && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "".concat(_Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['help-text'], " ").concat(_Form_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['help-text--has-error']),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, error));
-};
-
-/***/ }),
-
 /***/ "./components/SignForm/submitForm.js":
 /*!*******************************************!*\
   !*** ./components/SignForm/submitForm.js ***!
@@ -1938,6 +1930,10 @@ var validate = function validate(values) {
 
   if (!values.email) {
     errors.email = 'Required field';
+  }
+
+  if (!values.agree) {
+    errors.agree = 'You need to check the box to sign the letter :-)';
   }
 
   return errors;
@@ -41633,6 +41629,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _Index_module_sass__WEBPACK_IMPORTED_MODULE_2___default.a['page-wrap--grey'],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 67
@@ -41684,6 +41681,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _Index_module_sass__WEBPACK_IMPORTED_MODULE_2___default.a['page-wrap--grey'],
         __source: {
           fileName: _jsxFileName,
           lineNumber: 83
