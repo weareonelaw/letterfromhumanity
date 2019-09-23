@@ -11,6 +11,7 @@ export const SignForm = ({ submitSucceeded, submitFailed, handleSubmit, error = 
   )
   else return (
     <div className={styles["form-wrapper"]}>
+      <h2>Sign the letter</h2>
       <Form onSubmit={submitForm} handleSubmit={handleSubmit} />
       <Alert
         show={submitFailed}

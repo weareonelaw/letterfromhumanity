@@ -40,7 +40,7 @@ class Form extends React.Component {
             The email address will not be saved in any other way.
             Read more about how we handle your <a href="#" className={styles['link']}>personal information</a>.
           </p>
-          <Button className={styles['submit']} type="submit" block>Sign the letter</Button>
+          <Button className={styles['submit']} type="submit" block>Sign</Button>
         </form>
       </div>
     );

@@ -25,7 +25,6 @@ const ProgressBar = ( {progressData} ) => {
           <br />
           signatures
         </p>
-        <p className={styles['goal-desc']}>First goal: {formatInteger(progressGoal)}</p>
       </div>
       <svg
         className={styles['svg']}
