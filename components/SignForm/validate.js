@@ -10,6 +10,9 @@ const validate = values => {
   if (!values.email) {
     errors.email = 'Required field'
   }
+  if (!values.agree) {
+    errors.agree = 'You need to check the box to sign the letter :-)'
+  } 
 
   return errors
 }

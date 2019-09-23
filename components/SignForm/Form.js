@@ -1,6 +1,6 @@
 import React from 'react';
 import { Field } from 'redux-form';
-import { renderField } from './renderField';
+import Checkbox from '../Checkbox/Checkbox';
 import styles from './Form.module.sass';
 import Button from '../Button';
 import Input from '../Input/Input.js';
@@ -40,6 +40,15 @@ class Form extends React.Component {
             The email address will not be saved in any other way.
             Read more about how we handle your <a href="#" className={styles['link']}>personal information</a>.
           </p>
+
+          <Field
+            name="agree"
+            id="agree"
+            component={Checkbox}
+            type="checkbox"
+            label="I understand and want to sign the letter"
+          />
+
           <Button className={styles['submit']} type="submit" block>Sign</Button>
         </form>
       </div>
