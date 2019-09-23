@@ -21,9 +21,7 @@ const MainMenu = ({ toggleMainMenu, menuOpen }) => {
         <ul className={styles['links']}>
           {released && <li className={styles['link']}><a href="#sign">Sign</a></li>}
           <li className={styles['link']}><a href="#about">About</a></li>
-          {released && <li className={styles['link']}><a href="#social">Social</a></li>}
           <li className={styles['link']}><a href="#contact">Contact</a></li>
-          {released && <li className={styles['link']}><a href="#artists">Artists</a></li>}
         </ul>
       </div>
     </div>

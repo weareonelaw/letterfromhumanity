@@ -64,7 +64,7 @@ class Index extends Component {
         </ScrollableAnchor>
 
         <ScrollableAnchor id="about">
-          <div>
+          <div className={styles['page-wrap--grey']}>
             <Page>
               <Letter showProgress={!this.state.showCountdown} />
             </Page>
@@ -80,7 +80,7 @@ class Index extends Component {
         </ScrollableAnchor>}
 
         <ScrollableAnchor id="contact">
-          <div>
+          <div className={styles['page-wrap--grey']}>
             <Page>
               <Contact />
             </Page>

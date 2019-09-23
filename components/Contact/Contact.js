@@ -9,8 +9,6 @@ const Contact = () => (
     <h3 className={styles['sub-heading']}>For Press</h3>
     <p className={styles['desc']}>
       <a href="mailto:press@letterfromhumanity.org">press@letterfromhumanity.org</a>
-      <br/>
-      <a href="tel:+468123123">+46 8 123 123</a>
     </p>
 
     <h3 className={styles['sub-heading']}>General Questions</h3>
