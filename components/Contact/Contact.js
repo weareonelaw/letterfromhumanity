@@ -4,7 +4,7 @@ import styles from './Contact.module.sass';
 
 const Contact = () => (
   <div className={styles['contact']}>
-    <h2 className={styles['title']}>Contact</h2>
+    <h1 className={styles['title']}>Contact</h1>
 
     <h3 className={styles['sub-heading']}>For Press</h3>
     <p className={styles['desc']}>

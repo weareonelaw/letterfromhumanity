@@ -19,8 +19,8 @@ const MainMenu = ({ toggleMainMenu, menuOpen }) => {
       <div className={styles['overlay']} onClick={toggleMainMenu}></div>
       <div className={styles['menu-container']}>
         <ul className={styles['links']}>
+          <li className={styles['link']}><a href="#about">The letter</a></li>
           {released && <li className={styles['link']}><a href="#sign">Sign</a></li>}
-          <li className={styles['link']}><a href="#about">About</a></li>
           <li className={styles['link']}><a href="#contact">Contact</a></li>
         </ul>
       </div>
