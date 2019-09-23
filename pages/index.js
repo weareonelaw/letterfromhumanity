@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 import styles from './Index.module.sass';
 import { SignFormContainer } from '../containers/Form';
@@ -13,6 +13,8 @@ import Letter from '../components/Letter/Letter';
 import Countdown from '../components/Countdown/Countdown';
 import Page from '../components/Page/Page';
 import { EVENT_DATE } from '../utils/constants';
+
+configureAnchors({offset: -60})
 
 class Index extends Component {
   constructor(props) {
