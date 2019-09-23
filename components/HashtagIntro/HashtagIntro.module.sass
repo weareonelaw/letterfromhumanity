@@ -1,13 +1,13 @@
 @import ../../sass/variables
 
 .hashtag-intro
+    position: relative
     background-color: $onelaw-background-color
     box-sizing: border-box
     height: calc(100vh - 3em)
     display: flex
     flex-direction: column
     justify-content: center
-    font-family: Arial
     margin-left: auto
     margin-right: auto
     max-width: 600px
@@ -23,3 +23,30 @@
         font-size: 1.125em
         line-height: 1.63em
         margin-top: 0
+
+.scroll-down
+    display: block
+    position: absolute
+    bottom: 3em
+    text-align: center
+    width: 100%
+    font-size: 0.875em
+    text-transform: uppercase
+    transition: opacity 150
+
+    &:hover
+        text-decoration: none
+        opacity: 0.75
+
+.chevron:before
+	border-style: solid
+	border-width: 2px 2px 0 0
+	content: ''
+	display: inline-block
+	height: 12px
+	left: 0.15em
+	position: relative
+	vertical-align: top
+	width: 12px
+	top: 0
+	transform: rotate(135deg)
