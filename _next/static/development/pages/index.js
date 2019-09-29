@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Alert_module_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Alert.module.sass */ "./components/Alert/Alert.module.sass");
 /* harmony import */ var _Alert_module_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Alert_module_sass__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Alert/index.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/Alert/index.js";
 
 
 
@@ -50,7 +50,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Button_module_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Button_module_sass__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames/bind */ "./node_modules/classnames/bind.js");
 /* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames_bind__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Button/index.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/Button/index.js";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -115,7 +115,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Checkbox_module_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Checkbox.module.sass */ "./components/Checkbox/Checkbox.module.sass");
 /* harmony import */ var _Checkbox_module_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Checkbox_module_sass__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Checkbox/Checkbox.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/Checkbox/Checkbox.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -188,7 +188,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Contact_module_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Contact.module.sass */ "./components/Contact/Contact.module.sass");
 /* harmony import */ var _Contact_module_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Contact_module_sass__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Contact/Contact.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/Contact/Contact.js";
 
 
 
@@ -305,7 +305,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Countdown_module_sass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Countdown.module.sass */ "./components/Countdown/Countdown.module.sass");
 /* harmony import */ var _Countdown_module_sass__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Countdown_module_sass__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Countdown/Countdown.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/Countdown/Countdown.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -579,7 +579,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _HashtagIntro_module_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HashtagIntro.module.sass */ "./components/HashtagIntro/HashtagIntro.module.sass");
 /* harmony import */ var _HashtagIntro_module_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_HashtagIntro_module_sass__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/HashtagIntro/HashtagIntro.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/HashtagIntro/HashtagIntro.js";
 
 
 
@@ -605,7 +605,7 @@ var HashtagIntro = function HashtagIntro() {
       lineNumber: 8
     },
     __self: this
-  }, "Be part of a World Record, and sign the letter that binds humanity together as one"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, "Be a part of a World Record and sign the letter that binds humanity together as one"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "#about",
     className: _HashtagIntro_module_sass__WEBPACK_IMPORTED_MODULE_1___default.a['scroll-down'],
     __source: {
@@ -643,7 +643,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store_actions_creators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../store/actions/creators */ "./store/actions/creators.js");
 /* harmony import */ var _Header_module_sass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header.module.sass */ "./components/Header/Header.module.sass");
 /* harmony import */ var _Header_module_sass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Header_module_sass__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Header/Header.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/Header/Header.js";
 
 
 
@@ -699,7 +699,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Input/Input.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/Input/Input.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -793,7 +793,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ProgressBar_ProgressContainer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ProgressBar/ProgressContainer */ "./components/ProgressBar/ProgressContainer.js");
 /* harmony import */ var _Letter_module_sass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Letter.module.sass */ "./components/Letter/Letter.module.sass");
 /* harmony import */ var _Letter_module_sass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Letter_module_sass__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Letter/Letter.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/Letter/Letter.js";
 
 
 
@@ -864,7 +864,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Logo_module_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Logo.module.sass */ "./components/Logo/Logo.module.sass");
 /* harmony import */ var _Logo_module_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Logo_module_sass__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Logo/Logo.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/Logo/Logo.js";
 
 
 
@@ -942,7 +942,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MainMenu.module.sass */ "./components/Menu/MainMenu.module.sass");
 /* harmony import */ var _MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_MainMenu_module_sass__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _utils_constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utils/constants */ "./utils/constants.js");
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Menu/MainMenu.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/Menu/MainMenu.js";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -1060,7 +1060,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ToggleButton_module_sass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ToggleButton_module_sass__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! classnames/bind */ "./node_modules/classnames/bind.js");
 /* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(classnames_bind__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Menu/ToggleButton.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/Menu/ToggleButton.js";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -1130,7 +1130,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Page_module_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Page.module.sass */ "./components/Page/Page.module.sass");
 /* harmony import */ var _Page_module_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Page_module_sass__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/Page/Page.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/Page/Page.js";
 
 
 
@@ -1165,7 +1165,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ProgressBar_module_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ProgressBar_module_sass__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _utils_numbers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/numbers */ "./utils/numbers.js");
 /* harmony import */ var _utils_numbers__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_utils_numbers__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/ProgressBar/ProgressBar.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/ProgressBar/ProgressBar.js";
 
 
 
@@ -1276,7 +1276,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _ProgressBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProgressBar */ "./components/ProgressBar/ProgressBar.js");
 /* harmony import */ var _store_actions_creators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../store/actions/creators */ "./store/actions/creators.js");
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/ProgressBar/ProgressContainer.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/ProgressBar/ProgressContainer.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1369,7 +1369,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Form_module_sass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Form_module_sass__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Button */ "./components/Button/index.js");
 /* harmony import */ var _Input_Input_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Input/Input.js */ "./components/Input/Input.js");
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/SignForm/Form.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/SignForm/Form.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1527,7 +1527,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Alert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Alert */ "./components/Alert/index.js");
 /* harmony import */ var _SignForm_module_sass__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SignForm.module.sass */ "./components/SignForm/SignForm.module.sass");
 /* harmony import */ var _SignForm_module_sass__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_SignForm_module_sass__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/SignForm/SignForm.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/SignForm/SignForm.js";
 
 
 
@@ -1597,7 +1597,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Thanks_module_sass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Thanks.module.sass */ "./components/SignForm/Thanks.module.sass");
 /* harmony import */ var _Thanks_module_sass__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Thanks_module_sass__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Button */ "./components/Button/index.js");
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/SignForm/Thanks.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/SignForm/Thanks.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1780,7 +1780,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store_actions_creators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../store/actions/creators */ "./store/actions/creators.js");
 /* harmony import */ var _utils_numbers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils/numbers */ "./utils/numbers.js");
 /* harmony import */ var _utils_numbers__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_utils_numbers__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/SignForm/ThanksContainer.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/SignForm/ThanksContainer.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1886,7 +1886,7 @@ function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            return _context.abrupt("return", axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("https://letter-from-humanity-api-stage.herokuapp.com" + '/signatures/', _objectSpread({}, values)).catch(function (err) {
+            return _context.abrupt("return", axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("http://localhost:4000" + '/signatures/', _objectSpread({}, values)).catch(function (err) {
               return Object(_helpers_handleError__WEBPACK_IMPORTED_MODULE_2__["default"])(err);
             }));
 
@@ -1956,7 +1956,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Logo_Logo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Logo/Logo */ "./components/Logo/Logo.js");
 /* harmony import */ var _SplashScreen_module_sass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SplashScreen.module.sass */ "./components/SplashScreen/SplashScreen.module.sass");
 /* harmony import */ var _SplashScreen_module_sass__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_SplashScreen_module_sass__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/components/SplashScreen/SplashScreen.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/components/SplashScreen/SplashScreen.js";
 
 
 
@@ -2004,7 +2004,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-form */ "./node_modules/redux-form/es/index.js");
 /* harmony import */ var _components_SignForm_validate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/SignForm/validate */ "./components/SignForm/validate.js");
 /* harmony import */ var _components_SignForm_SignForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/SignForm/SignForm */ "./components/SignForm/SignForm.js");
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/containers/Form/SignFormContainer.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/containers/Form/SignFormContainer.js";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -41474,7 +41474,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Countdown_Countdown__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Countdown/Countdown */ "./components/Countdown/Countdown.js");
 /* harmony import */ var _components_Page_Page__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Page/Page */ "./components/Page/Page.js");
 /* harmony import */ var _utils_constants__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../utils/constants */ "./utils/constants.js");
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/pages/index.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/pages/index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -41754,7 +41754,7 @@ var toggleMainMenu = function toggleMainMenu() {
 };
 var getProgress = function getProgress() {
   return function (dispatch) {
-    var url = "".concat("https://letter-from-humanity-api-stage.herokuapp.com", "/stats");
+    var url = "".concat("http://localhost:4000", "/stats");
     dispatch({
       type: _types__WEBPACK_IMPORTED_MODULE_0__["GET_PROGRESS"],
       payload: {

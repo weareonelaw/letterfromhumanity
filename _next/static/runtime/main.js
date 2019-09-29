@@ -5706,7 +5706,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/.next");
       return error;
     }
   };
@@ -17960,7 +17960,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/node_modules/next/dist/client/next-dev */"./node_modules/next/dist/client/next-dev.js");
+module.exports = __webpack_require__(/*! /Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/node_modules/next/dist/client/next-dev */"./node_modules/next/dist/client/next-dev.js");
 
 
 /***/ }),

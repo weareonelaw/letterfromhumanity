@@ -36140,7 +36140,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var next_redux_wrapper__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next-redux-wrapper */ "./node_modules/next-redux-wrapper/es6/index.js");
 
-var _jsxFileName = "/Users/antonkjorcklinden/Development/Onelaw/letterfromhumanity/pages/_app.js";
+var _jsxFileName = "/Users/ahedstrom/Development/projects/weareonelaw/letterfromhumanity-ui/pages/_app.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -36228,7 +36228,7 @@ function (_App) {
           lineNumber: 36
         },
         __self: this
-      }, "Onelaw"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
+      }, "Sign the #letterfromhumanity"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
         name: "viewport",
         content: "initial-scale=1.0, width=device-width",
         __source: {
