@@ -50,7 +50,7 @@ class Index extends Component {
 
         <ScrollableAnchor id="intro">
           <div>
-            <Page>
+            <Page stars>
               {this.state.showCountdown ?
                 <Countdown
                   date={EVENT_DATE}
@@ -75,7 +75,7 @@ class Index extends Component {
 
         {!this.state.showCountdown && <ScrollableAnchor id="sign">
           <div>
-            <Page>
+            <Page stars>
               <SignFormContainer />
             </Page>
           </div>

@@ -16,10 +16,10 @@ const styles = theme => ({
   },
 });
 
-function InputClass({ classes, placeholder, name, required, onChange, input, type, label, meta: { touched, invalid, error, warning }, ...custom }) {
+function InputClass({ className, classes, placeholder, name, required, onChange, input, type, label, meta: { touched, invalid, error, warning }, ...custom }) {
 
   return (
-    <div>
+    <div className={className}>
       <TextField
         fullWidth
         label={placeholder}
@@ -31,7 +31,7 @@ function InputClass({ classes, placeholder, name, required, onChange, input, typ
             notchedOutline: classes.notchedOutline,
           }
         }}
-        variant="outlined"  
+        variant="outlined"
         {...input}
         {...custom}
       />

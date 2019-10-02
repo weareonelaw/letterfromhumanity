@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
-    "build": "next build && next export && touch out/.nojekyll && touch out/CNAME && echo \"letterfromhumanity.org\" >> out/CNAME && git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out origin gh-pages",
+    "build": "next build && next export && touch out/.nojekyll && touch out/CNAME && echo \"letterfromhumanity.org\" >> out/CNAME && git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out upstream gh-pages",
     "start": "next start"
   },
   "repository": {
@@ -35,6 +35,7 @@
     "react-countdown": "^2.0.0",
     "react-dom": "^16.7.0",
     "react-jss": "^8.6.1",
+    "react-particles-js": "^2.7.0",
     "react-redux": "^6.0.0",
     "react-scroll": "^1.7.10",
     "react-scrollable-anchor": "^0.6.1",
