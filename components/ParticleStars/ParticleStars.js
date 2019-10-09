@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Particles from 'react-particles-js';
 
-import config from './particlesjs-config-floating.json';
+import config from './particlesjs-config-martin.json';
 import styles from './ParticleStars.module.sass';
 
 class ParticleStars extends Component {
