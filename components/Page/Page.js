@@ -6,10 +6,12 @@ import styles from './Page.module.sass';
 import ParticleStars from "../ParticleStars/ParticleStars";
 
 const Page = ({ children, stars }) => (
-  <div className={styles['page']}>
+  <>
     {stars && <ParticleStars />}
-    {children}
-  </div>
+    <div className={styles['page']}>
+      {children}
+    </div>
+  </>
 );
 
 Page.defaultProps = {
