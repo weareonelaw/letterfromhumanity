@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
-    "build": "BACKEND_URL=https://letter-from-humanity-api-prod.herokuapp.com/ next build && next export && touch out/.nojekyll && touch out/CNAME && echo \"letterfromhumanity.org\" >> out/CNAME && git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out origin gh-pages",
+    "build": "next build",
     "start": "next start"
   },
   "repository": {
@@ -25,8 +25,6 @@
     "axios": "^0.18.0",
     "breakpoint-sass": "^2.7.1",
     "classnames": "^2.2.6",
-    "dotenv": "^6.2.0",
-    "dotenv-webpack": "^1.7.0",
     "next": "^7.0.2",
     "next-redux-wrapper": "^3.0.0-alpha.1",
     "node-sass": "^4.11.0",
