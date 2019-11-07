@@ -5,6 +5,7 @@ const withSass = require('@zeit/next-sass')
 const debug = process.env.NODE_ENV !== "production";
 
 module.exports = withSass({
+  target: 'serverless',
   exportPathMap: function () {
     return {
       "/": { page: "/" }
