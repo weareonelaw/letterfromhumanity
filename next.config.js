@@ -29,7 +29,9 @@ module.exports = withSass({
       ...config.plugins,
 
       // Read the .env file
-      new Dotenv()
+      new Dotenv({
+        systemvars: true
+      })
     ]
     // Perform customizations to webpack config
     // console.log('webpack');
