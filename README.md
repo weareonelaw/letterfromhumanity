@@ -12,5 +12,3 @@ A letter from humanity
 
 # How to build and auto-deploy to gh-pages
 `yarn run build`
-
-# Anton fix deployment
