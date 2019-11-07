@@ -25,8 +25,6 @@
     "axios": "^0.18.0",
     "breakpoint-sass": "^2.7.1",
     "classnames": "^2.2.6",
-    "dotenv": "^6.2.0",
-    "dotenv-webpack": "^1.7.0",
     "next": "^7.0.2",
     "next-redux-wrapper": "^3.0.0-alpha.1",
     "node-sass": "^4.11.0",
