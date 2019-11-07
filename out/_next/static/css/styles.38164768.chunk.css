@@ -442,6 +442,9 @@ a {
 .page-wrap--grey___2VkYb {
   background: #0f0f0f; }
 
+.starsContainer___32jB- {
+  position: relative; }
+
 .wrapper___3MtVa {
   margin-bottom: 20px; }
 
@@ -463,6 +466,9 @@ a {
   width: 100%; }
   .signup-form___1ixX3 .input___23BFz::placeholder {
     color: #FFF; }
+
+.signup-form___1ixX3 .field___15A8- {
+  background-color: #000; }
 
 .signup-form___1ixX3 .help-text___3AIMK {
   display: block; }
@@ -542,7 +548,8 @@ a {
 .form-wrapper___34WXN {
   max-width: 700px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  z-index: 101; }
 
 .logo___3LF-- svg {
   width: 100%; }
@@ -667,7 +674,7 @@ a {
 
 .hashtag-intro___38730 {
   position: relative;
-  background-color: black;
+  z-index: 101;
   box-sizing: border-box;
   height: calc(100vh - 3em);
   display: flex;
@@ -786,6 +793,7 @@ a {
   font-weight: bold; }
 
 .page___2lJdm {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -796,4 +804,19 @@ a {
   padding-bottom: 1em;
   max-width: 580px;
   margin: auto; }
+
+.stars___3xlks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+.particles___JB4SK {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black; }
 

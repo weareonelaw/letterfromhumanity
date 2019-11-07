@@ -13,17 +13,20 @@ class Form extends React.Component {
           <Field
             name="firstname"
             component={Input}
+            className={styles['field']}
             placeholder="First name"
             required
           />
           <Field
             name="lastname"
             component={Input}
+            className={styles['field']}
             placeholder="Last name"
           />
           <Field
             name="email"
             component={Input}
+            className={styles['field']}
             placeholder="Email"
             type="email"
             required
@@ -31,6 +34,7 @@ class Form extends React.Component {
            <Field
             name="location"
             component={Input}
+            className={styles['field']}
             placeholder="Where are you located?"
           />
 

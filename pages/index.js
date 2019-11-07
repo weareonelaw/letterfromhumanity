@@ -49,8 +49,8 @@ class Index extends Component {
         {this.state.showSplashScreen && <SplashScreen />}
 
         <ScrollableAnchor id="intro">
-          <div>
-            <Page>
+          <div className={styles['starsContainer']}>
+            <Page stars>
               {this.state.showCountdown ?
                 <Countdown
                   date={EVENT_DATE}
@@ -74,8 +74,8 @@ class Index extends Component {
         </ScrollableAnchor>
 
         {!this.state.showCountdown && <ScrollableAnchor id="sign">
-          <div>
-            <Page>
+          <div className={styles['starsContainer']}>
+            <Page stars>
               <SignFormContainer />
             </Page>
           </div>
