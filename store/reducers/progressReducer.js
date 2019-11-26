@@ -4,7 +4,7 @@ import {
   GET_PROGRESS_REJECTED
 } from '../actions/types';
 
-const progressGoal = 200000;
+const progressGoal = 1000;
 
 const uiReducer = (
   state = {
