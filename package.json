@@ -4,7 +4,7 @@
   "description": "A letter from humanity",
   "main": "index.js",
   "engines" : { 
-    "node" : "12.13.1" 
+    "node" : ">=12.13.1" 
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
