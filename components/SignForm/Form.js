@@ -41,7 +41,7 @@ class Form extends React.Component {
           <p className={styles['desc']}>
             When the signature is sent to the recipient, only your first and last name are visible.
             We use your email address at the collection of names to be sure that each signature is unique.
-            The email address will not be saved in any other way.
+            The email address will never be shared with third parties.
             Read more about how we handle your <a href="/terms" target="_blank" className={styles['link']}>personal information</a>.
           </p>
 

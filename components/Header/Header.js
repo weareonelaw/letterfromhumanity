@@ -9,7 +9,9 @@ const Header = () => {
   return (
     <div className={styles['header']}>
       <div className={styles['logo']}>
-        <Logo />
+        <a href="/">
+          <Logo />
+        </a>
       </div>
     </div>
   );

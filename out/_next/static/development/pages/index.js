@@ -2065,7 +2065,7 @@ var validate = function validate(values) {
   }
 
   if (!values.agree) {
-    errors.agree = 'You need to check the box to sign the letter :-)';
+    errors.agree = 'You need to check the box to sign the letter';
   }
 
   return errors;

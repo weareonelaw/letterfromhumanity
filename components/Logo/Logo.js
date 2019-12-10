@@ -2,15 +2,13 @@ import React from 'react';
 
 import styles from './Logo.module.sass';
 
-const Logo = () => (
-  <div className={styles['logo']}>
+const Logo = ({ className }) => (
+  <div className={`${styles['logo']} ${className}`}>
     <svg
       version="1.1"
       id="Layer_1"
       x="0px"
       y="0px"
-      width="857.5px"
-      height="221.25px"
       viewBox="0 0 857.5 221.25"
       enableBackground="new 0 0 857.5 221.25"
     >

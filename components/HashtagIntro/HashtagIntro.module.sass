@@ -32,11 +32,19 @@
     width: 100%
     font-size: 0.875em
     text-transform: uppercase
-    transition: opacity 150
 
     &:hover
         text-decoration: none
         opacity: 0.75
+
+@keyframes downarrow
+  0%
+    transform: translateY(0)
+  100%
+    transform: translateY(0.4em)
+
+.chevron
+  animation: downarrow 0.6s infinite alternate
 
 .chevron:before
 	border-style: solid
@@ -50,3 +58,4 @@
 	width: 12px
 	top: 0
 	transform: rotate(135deg)
+
