@@ -3,13 +3,14 @@ import s from './About.module.sass';
 import ToggleButton from '../components/Menu/ToggleButton';
 import MainMenu from '../components/Menu/MainMenu';
 import Header from '../components/Header/Header';
+import Page from '../components/Page/Page';
 
 const About = () => (
   <>
     <ToggleButton />
     <MainMenu />
     <Header />
-    <div className={s['wrapper']}>
+    <Page>
       <p><strong>About the letter from humanity</strong></p>
       <blockquote className={s['quote']}>&ldquo;The fact that we all share the same cosmic origin is overwhelming, but also easy to ignore.
       Science tells us that all living beings consist of starstuff. To eliminate separative behavior such as racism and fatal international conflicts, we genuinely believe that humanity needs a major cognitive shift and to transform our basic world view into a cosmic perspective. No national boundaries are evident from space. From the cosmic vantage point, we all share the same home. All of us.&rdquo;
@@ -57,7 +58,7 @@ const About = () => (
           <li>Martin William Landl</li>
         </ul>
       </div>
-    </div>
+    </Page>
   </>
 );
 

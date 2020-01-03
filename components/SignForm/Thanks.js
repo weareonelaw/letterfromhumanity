@@ -73,7 +73,7 @@ class Thanks extends Component {
             className={styles['btn']}
             block
             secondary
-            href="#about"
+            href="/about"
           >
             Read more about the project
           </Button>
