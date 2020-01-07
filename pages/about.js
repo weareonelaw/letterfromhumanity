@@ -11,7 +11,7 @@ const About = () => (
     <MainMenu />
     <Header />
     <Page>
-      <p><strong>About the letter from humanity</strong></p>
+      <h2 className={s.header}>About the letter from humanity</h2>
       <blockquote className={s['quote']}>&ldquo;The fact that we all share the same cosmic origin is overwhelming, but also easy to ignore.
       Science tells us that all living beings consist of starstuff. To eliminate separative behavior such as racism and fatal international conflicts, we genuinely believe that humanity needs a major cognitive shift and to transform our basic world view into a cosmic perspective. No national boundaries are evident from space. From the cosmic vantage point, we all share the same home. All of us.&rdquo;
       <br /><i>- Martin William Landl, project creator.</i>
