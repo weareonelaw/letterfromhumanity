@@ -1,11 +1,12 @@
 import axios from 'axios';
+
 import handleError from '../../helpers/handleError';
 
 // TODO: Handle when no connection to internet is present.
-  const submitForm = async (values) => {
-    return axios.post(process.env.BACKEND_URL + '/signatures/', {
-      ...values
-    })
+const submitForm = async (values) => {
+  return axios.post(process.env.BACKEND_URL + '/signatures/', {
+    ...values
+  })
   .catch((err) => handleError(err));
 };
 

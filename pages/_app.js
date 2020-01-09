@@ -1,6 +1,7 @@
 import '../sass/application.scss';
 import React from 'react';
 import { Provider } from 'react-redux';
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 import configureStore from '../store/configurateStore';
 import JssProvider from 'react-jss/lib/JssProvider';
 import { MuiThemeProvider } from '@material-ui/core/styles';
@@ -59,7 +60,9 @@ class MyApp extends App {
             {/* Pass pageContext to the _document though the renderPage enhancer
                 to render collected styles on server-side. */}
             <Provider store={store}>
-              <Component pageContext={this.pageContext} {...pageProps} />
+              <GoogleReCaptchaProvider reCaptchaKey="6LeFro4UAAAAACJIU6LMLwWSDTJJWkm-O84sEh4c">
+                <Component pageContext={this.pageContext} {...pageProps} />
+              </GoogleReCaptchaProvider>
             </Provider>
           </MuiThemeProvider>
         </JssProvider>

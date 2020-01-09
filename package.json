@@ -38,6 +38,7 @@
     "react": "^16.7.0",
     "react-countdown": "^2.0.0",
     "react-dom": "^16.7.0",
+    "react-google-recaptcha-v3": "^1.5.0",
     "react-jss": "^8.6.1",
     "react-particles-js": "^2.7.0",
     "react-redux": "^6.0.0",

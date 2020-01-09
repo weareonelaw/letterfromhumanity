@@ -1,11 +1,22 @@
 import React from 'react';
 import { Field } from 'redux-form';
+import { withGoogleReCaptcha } from 'react-google-recaptcha-v3';
+
 import Checkbox from '../Checkbox/Checkbox';
 import styles from './Form.module.sass';
 import Button from '../Button';
 import Input from '../Input/Input.js';
 
 class Form extends React.Component {
+  componentDidMount() {
+    this.props.googleReCaptchaProps
+      .executeRecaptcha('sign_form_mounted')
+      .then((token) => {
+        this.props.change("recaptchaToken", token);
+      })
+      .catch((e) => console.log("Recaptcha token error", e));
+  }
+
   render() {
     return (
       <div className={styles['signup-form']}>
@@ -59,4 +70,4 @@ class Form extends React.Component {
   }
 }
 
-export default Form;
+export default withGoogleReCaptcha(Form);
