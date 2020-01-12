@@ -1,6 +1,5 @@
 import axios from 'axios';
 import handleError from '../../helpers/handleError';
-import { goToAnchor } from 'react-scrollable-anchor'
 
 // TODO: Handle when no connection to internet is present.
 const submitForm = async (values) => {
