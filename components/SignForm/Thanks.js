@@ -37,7 +37,7 @@ class Thanks extends Component {
   render() {
     const { numberSigns, lastSignLocation } = this.props;
     return (
-      <div className={styles['thanks']}>
+      <div className={styles['thanks']} id="thanks">
         <h1 className={styles['title']}>Thank you!</h1>
         <p className={styles['desc']}>
           In the midst of these one hundred billion galaxies, we're eternally grateful that you are one of {numberSigns} humans that signed this letter. By making history together, we can create the future. You can share the letter with your friends below.
