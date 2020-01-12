@@ -6,9 +6,7 @@ import { goToAnchor } from 'react-scrollable-anchor'
 const submitForm = async (values) => {
   return axios.post(process.env.BACKEND_URL + '/signatures/', {
     ...values
-  }).then(
-    goToAnchor('sign')
-  )
+  })
   .catch((err) => handleError(err));
 };
 
