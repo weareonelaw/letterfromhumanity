@@ -30,13 +30,35 @@ const About = () => (
             <li>Jonatan Andersson</li>
             <li>Martin William Landl</li>
         </ul>
-        <h3><strong>Creatives</strong></h3>
+        <h3><strong>Producers</strong></h3>
         <ul>
+            <li>Martin William Landl</li>
             <li>Linnea Elffors</li>
             <li>Lukas Landl</li>
             <li>Didrik Franz&eacute;n</li>
             <li>Hugo Kalm</li>
-            <li>Leo Br&auml;nnstr&ouml;m</li>
+        </ul>
+        <h3>Creatives</h3>
+        <ul>
+          <li>Achraf Benachour</li>
+          <li>Benjamin Trossö</li>
+          <li>Caroline Cederlöf</li>
+          <li>Christian D Durtschi</li>
+          <li>Dana Bonilla</li>
+          <li>Gabriel Fontana</li>
+          <li>Hanna Kihlgren</li>
+          <li>Ida Johansson</li>
+          <li>Kalle Nylander</li>
+          <li>Leo Brännström</li>
+          <li>Linus Erlandsson</li>
+          <li>Maja Francis</li>
+          <li>Matilda Aldsjö</li>
+          <li>Michael Edward Ball</li>
+          <li>Moa Åsen</li>
+          <li>Nhabera</li>
+          <li>Oliver Berger</li>
+          <li>Tobias Andrén</li>
+          <li>Victoria Pham</li>
         </ul>
         <h3><strong>Photographer</strong></h3>
         <ul>
