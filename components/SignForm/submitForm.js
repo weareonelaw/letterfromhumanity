@@ -6,7 +6,9 @@ import handleError from '../../helpers/handleError';
 const submitForm = async (values) => {
   return axios.post(process.env.BACKEND_URL + '/signatures/', {
     ...values
-  })
+  }).then(
+    location.hash = '#sign'
+  )
   .catch((err) => handleError(err));
 };
 
