@@ -26,7 +26,7 @@
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "@zeit/next-sass": "^1.0.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "breakpoint-sass": "^2.7.1",
     "classnames": "^2.2.6",
     "dotenv": "^6.2.0",
