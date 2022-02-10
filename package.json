@@ -33,7 +33,7 @@
     "dotenv-webpack": "^1.7.0",
     "next": "^9.1.2",
     "next-redux-wrapper": "^3.0.0-alpha.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "normalize-scss": "^7.0.1",
     "react": "^16.7.0",
     "react-countdown": "^2.0.0",
